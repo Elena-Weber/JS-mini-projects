@@ -1,0 +1,12 @@
+body {
+
+}
+.heading {
+    text-align: center;
+}
+.one {
+    background-image: url('https://images.unsplash.com/photo-1609210885099-6ba41569c6dc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGtpdGNoZW58ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60');
+}
+.two {
+    background-image: url('https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGxpdmluZyUyMHJvb218ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60');
+}
