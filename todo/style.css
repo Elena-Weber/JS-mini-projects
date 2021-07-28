@@ -1,0 +1,125 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1519393890420-f28727375fa5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.plans {
+    font-size: 60px;
+    color: #fbe8d3;
+    text-shadow: 2px 2px 10px #7d5a5a;
+}
+.shopping {
+    font-size: 60px;
+    -webkit-text-stroke: 2px #7d5a5a;
+    background: linear-gradient(168deg, rgba(249,200,174,1) 0%, rgba(255,252,246,1) 50%, rgba(249,200,174,1) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.inputField {
+    padding: 10px;
+    width: 70%;
+    border-color: #fbe8d3;
+}
+.another-inputField {
+    padding: 10px;
+    width: 70%;
+    border-color: #7d5a5a;
+    border-radius: 10px;
+}
+.btn {
+    padding: 20px;
+    background-color: #fbe8d3;
+}
+.another-btn {
+    padding: 20px;
+    background: linear-gradient(168deg, rgba(249,200,174,1) 0%, rgba(255,252,246,1) 50%, rgba(249,200,174,1) 100%);
+    border-radius: 10px;
+}
+.another-btn:hover {
+    cursor: copy;
+}
+.addedItem {
+    background-color: #fbe8d3;
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    border: 1px solid #7d5a5a;
+    margin: 5px;
+    padding: 30px 0 0 0;
+}
+.addedItem:hover {
+    cursor: alias;
+}
+.planner {
+    justify-content: center;
+}
+.another-addedItem {
+    background: linear-gradient(168deg, rgba(249,200,174,1) 0%, rgba(255,252,246,1) 50%, rgba(249,200,174,1) 100%);
+    list-style-type: none;
+    height: 50px;
+    width: 80%;
+    text-align: center;
+    color: #7d5a5a;
+    font-size: 20px;
+    border: 1px solid #7d5a5a;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 30px 0 0 0;
+}
+.another-addedItem:hover {
+    cursor: pointer;
+}
+li {
+    text-align: center;
+}
+.planner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shopping-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.strikethrough {
+    background-color: #beebe9;
+    color: black;
+    text-decoration: line-through;
+    transition: all 2s ease;
+}
+.another-strikethrough {
+    color: black;
+    text-decoration: line-through double red;
+    transition: all 1s ease;
+}
+
+@media all and (max-width: 800px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .plans, .shopping {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .plans, .shopping {
+        font-size: 25px;
+    }
+}
