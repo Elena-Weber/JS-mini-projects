@@ -1,8 +1,22 @@
 body {
-    background-color: antiquewhite;
+    background-color: #F2FAFF;
+    color: #2A2A33;
 }
 .heading {
     text-align: center;
+    background-color: #F2FAFF;
+}
+.house {
+    display: flex;
+    justify-content: center;
+}
+.dream_pic {
+    width: 500px;
+    margin: 20px;
+}
+.house_text {
+    margin: 5px;
+    font-size: 20px;
 }
 .rooms {
     display: flex;
@@ -17,37 +31,48 @@ body {
 }
 .name {
     position: absolute;
-    top: 15px;
-    left: 40px;
-    background-color: aquamarine;
+    /* top: 5px; */
+    left: 20px;
+    background-color: #F2FAFF;
+    border-radius: 5px;
+    opacity: 80%;
     font-size: 0;
 }
 .desc {
     position: absolute;
-    top: 100px;
-    left: 40px;
+    top: 55px;
+    left: 20px;
     font-size: 0;
+    background-color: #F2FAFF;
+    border-radius: 5px;
+    opacity: 80%;
 }
 .short {
     position: absolute;
-    bottom: 40px;
-    left: 40px;
+    bottom: 20px;
+    left: 20px;
     font-size: 0;
+    background-color: #F2FAFF;
+    border-radius: 5px;
+    opacity: 80%;
 }
 .hovered {
     flex: 3;
 }
 .hovered .name {
-    font-size: 40px;
+    font-size: 25px;
     transition: all 1s ease-in;
+    padding: 3px 5px;
 }
 .hovered .desc {
     font-size: 20px;
     transition: all 1s ease-in;
+    padding: 3px 5px;
 }
 .hovered .short {
-    font-size: 30px;
+    font-size: 20px;
     transition: all 1s ease-in;
+    padding: 3px 5px;
 }
 .one {
     background-image: url('https://images.unsplash.com/photo-1609210885099-6ba41569c6dc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGtpdGNoZW58ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60');
@@ -78,4 +103,34 @@ body {
 }
 .ten {
     background-image: url('https://images.unsplash.com/photo-1511190404154-700f574540f2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmFzZW1lbnR8ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60');
+}
+.form {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input, textarea {
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    font-size: 15px;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #F2FAFF;
+}
+button:hover {
+    background-color: #0D4599;
+    color: #F2FAFF;
+    cursor: pointer;
+}
+.price {
+    color: #0D4599;
 }

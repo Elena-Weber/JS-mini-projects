@@ -13,13 +13,22 @@
     </div>
 
     <div class="house">
-
-    </div>
+        <div>
+            <img class="dream_pic" src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="dreamhouse">
+        </div>
+        <div class="house_text">
+            <p>This is the one you’ve been waiting for! Pride of ownership shows in this well-maintained home on a popular street. The home offers an updated kitchen with new appliances, freshly painted throughout and features 2 bedrooms and 2 full bathrooms. The nice layout gives the buyer a spacious living room with a fireplace and a dining room and. The home also features: newer sprinklers, a newer furnace and a private backyard with a patio.</p>
+            <h2 class="price">$300,000</h2>
+            <p>2 bd | 2 ba | 1,600 sqft</p>
+            <p><strong>Address:</strong> 1234 Main Rd, Nice City, MI 12345</p>
+            <p><strong>Est. payment:</strong> $2,000/mo</p>
+        </div>
+    </div><br>
 
     <div class="rooms">
         <div class="room one">
             <h4 class="name">Kitchen</h4>
-            <p class="desc">Whether you like cooking or not, you'll definitely like being here</p>
+            <p class="desc">Even food tastes better here</p>
             <p class="short">Light and spacious</p>
         </div>
         <div class="room two">
@@ -67,11 +76,24 @@
             <p class="desc">Always cooler in summer and warmer in winter</p>
             <p class="short">Use it as a gym or as a storage</p>
         </div>
-    </div>
+    </div><br>
 
     <div class="form">
-
+        <h2>Contact us about the house</h2>
+        <div>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqlgqyv" method="post">
+                    <label for="full-name">Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="Type your name here" required="">
+                    <label for="email-address">Email</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@email.com" required="">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Add your message here" required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    <button type="submit">SEND</button>
+            </form>
+        </div>
     </div>
+
     <script src="gallery.js"></script>
 </body>
 </html>
