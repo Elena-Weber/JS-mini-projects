@@ -1,0 +1,25 @@
+body {
+    background-color: gold;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#pics {
+    width: 500px;
+}
+
+button {
+    font-size: 30px;
+    background-color: goldenrod;
+    color: indigo;
+    border: none;
+    /* font-family: ; */
+}
+
+button:hover {
+    cursor: pointer;
+}
