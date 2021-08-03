@@ -12,6 +12,7 @@ const pics = ['https://images.unsplash.com/photo-1589584556363-b90f6bcc7149?ixid
 let i = 0;
 
 const previous = document.querySelector('#previous');
+
 previous.addEventListener('click', () => {
     i--;
     if (i < 0) {
@@ -21,6 +22,7 @@ previous.addEventListener('click', () => {
 })
 
 const next = document.querySelector('#next');
+
 next.addEventListener('click', () => {
     i++;
     if (i > pics.length-1) {
