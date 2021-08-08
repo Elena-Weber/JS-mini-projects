@@ -13,36 +13,37 @@
         <input type="text" id="result" placeholder="0" disabled />
         <table>
             <tr>
-                <td onclick="calcad('(')">(</td>
-                <td onclick="calcad(')')">)</td>
-                <td onclick="remove_child()">&lt;-</td>
-                <td onclick="calcad('+')" class="vari">+</td>
+                <td onclick="calc('(')">(</td>
+                <td onclick="calc(')')">)</td>
+                <td onclick="remove()">&lt;-</td>
+                <td onclick="calc('+')" class="vari">+</td>
             </tr>
             <tr>
-                <td onclick="calcad('7')">7</td>
-                <td onclick="calcad('8')">8</td>
-                <td onclick="calcad('9')">9</td>
-                <td onclick="calcad('-')" class="vari">-</td>
+                <td onclick="calc('7')">7</td>
+                <td onclick="calc('8')">8</td>
+                <td onclick="calc('9')">9</td>
+                <td onclick="calc('-')" class="vari">-</td>
             </tr>
             <tr>
-                <td onclick="calcad('4')">4</td>
-                <td onclick="calcad('5')">5</td>
-                <td onclick="calcad('6')">6</td>
-                <td onclick="calcad('*')" class="vari">*</td>
+                <td onclick="calc('4')">4</td>
+                <td onclick="calc('5')">5</td>
+                <td onclick="calc('6')">6</td>
+                <td onclick="calc('*')" class="vari">*</td>
             </tr>
             <tr>
-                <td onclick="calcad('1')">1</td>
-                <td onclick="calcad('2')">2</td>
-                <td onclick="calcad('3')">3</td>
-                <td onclick="calcad('/')" class="vari">/</td>
+                <td onclick="calc('1')">1</td>
+                <td onclick="calc('2')">2</td>
+                <td onclick="calc('3')">3</td>
+                <td onclick="calc('/')" class="vari">/</td>
             </tr>
             <tr>
                 <td onclick="reset()">C</td>
-                <td onclick="calcad('0')">0</td>
-                <td onclick="calcad('.')">.</td>
-                <td onclick="execm()" class="equals">=</td>
+                <td onclick="calc('0')">0</td>
+                <td onclick="calc('.')">.</td>
+                <td onclick="execute()" class="equals">=</td>
             </tr>
         </table>
     </div>
+    <script src="calc.js"></script>
 </body>
 </html>
