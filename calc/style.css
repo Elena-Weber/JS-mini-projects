@@ -3,32 +3,39 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .calculator {
     text-align: center;
     margin: 5px 0 0 25px;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: left;
 }
+
 table {
     width: 30%;
 }
+
 h1 {
     text-align: left;
     margin: 30px 10px 20px 140px;
 }
+
 td {
     font-size: 30px;
     background-color: #FCF8E8;
     width: 30px;
     height: 90px;
 }
+
 td:hover {
     cursor: pointer;
     background-color: #D4E2D4;
 }
+
 input {
     text-align: right;
     width:28%;
@@ -36,9 +43,11 @@ input {
     margin: 5px;
     font-size: 30px;
 }
+
 .accent {
     background-color: #ECB390;
 }
+
 .equals {
     background-color: #DF7861;
 }
