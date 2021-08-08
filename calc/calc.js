@@ -11,7 +11,7 @@ function remove() {
 }
 function execute() {
     if (initial.length == 0 || initial == "") {
-        alert("Oops! There's nothing to calculate. Try again!");
+        alert("Oops! There's nothing to calculate. Please, try again!");
         return;
     }
     try {
@@ -19,7 +19,7 @@ function execute() {
         result.value = answer;
     }
     catch(err) {
-        alert("Invalid Input");
+        alert("There's an error in your input. Please, try again!");
     }
 }
 function reset() {
