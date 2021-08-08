@@ -5,11 +5,9 @@ body {
 }
 .calculator {
     text-align: center;
-    /* background-color: aqua; */
     margin: 5px 0 0 25px;
 }
 .container {
-    /* background-color: brown; */
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -19,17 +17,17 @@ table {
 }
 h1 {
     text-align: left;
-    margin: 20px 10px 20px 140px;
-    /* background-color: darkorange; */
+    margin: 30px 10px 20px 140px;
 }
 td {
     font-size: 30px;
-    background-color: darkgrey;
+    background-color: #FCF8E8;
     width: 30px;
     height: 90px;
 }
 td:hover {
     cursor: pointer;
+    background-color: #D4E2D4;
 }
 input {
     text-align: right;
@@ -39,8 +37,8 @@ input {
     font-size: 30px;
 }
 .accent {
-    background-color: darkkhaki;
+    background-color: #ECB390;
 }
 .equals {
-    background-color: darkorange;
+    background-color: #DF7861;
 }
