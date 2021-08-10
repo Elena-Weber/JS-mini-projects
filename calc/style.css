@@ -53,6 +53,10 @@ input {
     background-color: #DF7861;
 } */
 
+body {
+    background-color: #F1F6F9;
+    color: #222831;
+}
 .cont {
     height: 100vh;
     display: flex;
@@ -61,35 +65,42 @@ input {
 }
 
 .calc {
-    box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgba(0,0,0,.16);
-    border-radius: 28px;
-    padding: 16px;
+    border-radius: 20px;
+    padding: 15px;
     display: grid;
     grid-template-columns: repeat(4, 66px);
+    background-color: #14274E;
 }
 input {
     grid-column: span 4;
-    height: 60px;
-    width: 258px;
-    box-shadow: inset -6px -6px 13px #fff, inset 6px 6px 13px rgba(0,0,0,.16);
+    height: 40px;
+    width: 224px;
     border: none;
-    border-radius: 30px;
+    border-radius: 15px;
     text-align: end;
-    margin: 40px 0;
-    padding: 20px;
-    font-size: 40px;
+    margin: 20px 10px 5px 10px;
+    padding: 10px;
+    font-size: 30px;
 }
 button {
-    box-shadow: inset 6px 6px 13px #fff, 6px 6px 13px rgba(0,0,0,.16);
     border: none;
     border-radius: 50%;
-    background-color: #ecf0f3;
-    margin: 10px;
+    margin: 5px;
     height: 50px;
     width: 50px;
     font-size: 20px;
+    background-color: #F1F6F9;
+}
+button:hover {
+    background-color: #394867;
+    color: #F1F6F9;
+    border: 1px solid #F1F6F9;
 }
 .equals {
-    width: 240px;
-    border-radius: 40px;
+    width: 250px;
+    border-radius: 15px;
+    background-color: #F05454;
+}
+.accent {
+    background-color: #9BA4B4;
 }
