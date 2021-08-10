@@ -134,3 +134,32 @@ button:hover {
 .price {
     color: #0D4599;
 }
+
+@media all and (max-width: 800px) {
+    .dream_pic {
+        width: 400px;
+        margin: 20px;
+    }
+    .house {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .plans, .shopping {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .dream_pic {
+        width: 300px;
+        margin: 20px;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .plans, .shopping {
+        font-size: 25px;
+    }
+}

@@ -1,7 +1,7 @@
 body {
     background-image: url('https://images.unsplash.com/photo-1519393890420-f28727375fa5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100vh;
 }
 .main {
     display: flex;
@@ -28,21 +28,29 @@ body {
     padding: 10px;
     width: 70%;
     border-color: #fbe8d3;
+    margin: 5px;
+    font-size: 20px;
 }
 .another-inputField {
     padding: 10px;
     width: 70%;
     border-color: #7d5a5a;
     border-radius: 10px;
+    margin: 5px;
+    font-size: 20px;
 }
 .btn {
     padding: 20px;
     background-color: #fbe8d3;
+    margin: 5px;
+    font-size: 20px;
 }
 .another-btn {
     padding: 20px;
     background: linear-gradient(168deg, rgba(249,200,174,1) 0%, rgba(255,252,246,1) 50%, rgba(249,200,174,1) 100%);
     border-radius: 10px;
+    margin: 5px;
+    font-size: 20px;
 }
 .another-btn:hover {
     cursor: copy;
