@@ -47,7 +47,7 @@ let execute = () => {
         return;
     }
     try {
-        result.value = eval(userinput.value)
+        result.value = eval(userinput.value);
     }
     catch(err) {
         alert("There's an error in your input. Please, try again!");
@@ -59,4 +59,7 @@ function reset() {
     }
 function remove() {
     userinput.value = userinput.value.slice(0, -1);
+    if (userinput.value.length === 0 || userinput.value === "") {
+        result.value = '';
+    }
 }
