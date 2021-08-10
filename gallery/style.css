@@ -40,7 +40,7 @@ body {
 }
 .desc {
     position: absolute;
-    top: 55px;
+    top: 45px;
     left: 20px;
     font-size: 0;
     background-color: #F2FAFF;
@@ -49,7 +49,7 @@ body {
 }
 .short {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 20px;
     font-size: 0;
     background-color: #F2FAFF;
@@ -60,17 +60,17 @@ body {
     flex: 3;
 }
 .hovered .name {
-    font-size: 25px;
+    font-size: 20px;
     transition: all 1s ease-in;
     padding: 3px 5px;
 }
 .hovered .desc {
-    font-size: 20px;
+    font-size: 15px;
     transition: all 1s ease-in;
     padding: 3px 5px;
 }
 .hovered .short {
-    font-size: 20px;
+    font-size: 15px;
     transition: all 1s ease-in;
     padding: 3px 5px;
 }
@@ -124,12 +124,12 @@ button {
     margin: 10px;
     font-size: 15px;
     border-radius: 10px;
-    background-color: #F2FAFF;
-}
-button:hover {
     background-color: #0D4599;
     color: #F2FAFF;
+}
+button:hover {
     cursor: pointer;
+    opacity: 80%;
 }
 .price {
     color: #0D4599;
@@ -144,22 +144,5 @@ button:hover {
         display: flex;
         flex-direction: column;
         text-align: center;
-    }
-    .plans, .shopping {
-        font-size: 30px;
-    }
-}
-
-@media all and (max-width: 500px) {
-    .dream_pic {
-        width: 300px;
-        margin: 20px;
-    }
-    .main {
-        display: flex;
-        flex-direction: column;
-    }
-    .plans, .shopping {
-        font-size: 25px;
     }
 }

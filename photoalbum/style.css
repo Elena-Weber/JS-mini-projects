@@ -54,10 +54,10 @@ h1 span:nth-child(18){ animation-delay:.85s; }
 }
 
 button {
-    font-size: 30px;
+    font-size: 20px;
     background-color: #FFFFC7;
     border: solid 2px #1EAE98;
-    margin: 0 15px 25px 15px;
+    margin: 0 15px 20px 15px;
     padding: 5px 15px;
     color: #1EAE98;
     border-radius: 10px;
@@ -75,4 +75,16 @@ img {
     padding: 10px;
     border: 1px solid #233E8B;
     box-shadow: 5px 5px 10px #233E8B;
+}
+
+@media all and (max-width: 800px) {
+    #pics {
+        width: 400px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #pics {
+        width: 300px;
+    }
 }
