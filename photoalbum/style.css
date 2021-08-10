@@ -14,6 +14,7 @@ h1 span {
 
 h1:hover span {
     animation: bounce .8s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes bounce {
@@ -66,6 +67,7 @@ button:hover {
     cursor: pointer;
     background-color: #1EAE98;
     color: #A9F1DF;
+    border: solid 2px #A9F1DF;
 }
 
 img {
