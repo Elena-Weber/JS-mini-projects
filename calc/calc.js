@@ -34,7 +34,7 @@
 //     initial = '';
 // }
 
-const userinput = document.getElementById('userinput');
+let userinput = document.getElementById('userinput');
 
 let result = document.getElementById('result');
 
@@ -42,6 +42,10 @@ let calc = (val) => {
     userinput.value += val;
 }
 let execute = () => {
+    if (userinput.value.length === 0 || userinput.value === "") {
+        alert("Oops! There's nothing to calculate. Please, try again!");
+        return;
+    }
     try {
         result.value = eval(userinput.value)
     }
