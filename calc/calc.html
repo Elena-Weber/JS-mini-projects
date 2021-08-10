@@ -8,7 +8,7 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="calculator">
+    <!-- <div class="calculator">
         <h1>Calculator</h1>
         <div class="container">
             <input type="text" id="user_input" placeholder="0" disabled />
@@ -37,6 +37,7 @@
                     <td onclick="calc('2')">2</td>
                     <td onclick="calc('3')">3</td>
                     <td onclick="calc('/')" class="accent">/</td>
+                    <td onclick="calc('%')" class="accent">%</td>
                 </tr>
                 <tr>
                     <td onclick="reset()">C</td>
@@ -46,7 +47,35 @@
                 </tr>
             </table>
         </div>
+    </div> -->
+
+    <div class="cont">
+        <div class="calc">
+            <input type="text" id="inputext" placeholder="0" />
+            <button>(</button>
+            <button>)</button>
+            <button>%</button>
+            <button><-</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>+</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>*</button>
+            <button>C</button>
+            <button>0</button>
+            <button>.</button>
+            <button>/</button>
+            <button class="equals">=</button>
+        </div>
     </div>
+
     <script src="calc.js"></script>
 </body>
 </html>
