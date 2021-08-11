@@ -18,8 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: brown; */
-    margin: 10px 70px 0 0;
+    margin: 10px 70px 10px 10px;
 }
 
 .container-two {
@@ -27,8 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: coral; */
-    margin: 10px 70px 0 0;
+    margin: 10px 70px 10px 10px;
 }
 
 .rules-heading {
@@ -36,7 +34,7 @@ body {
 }
 
 .rules {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 canvas {
@@ -50,6 +48,7 @@ button {
     border-radius: 10px;
     background-color: #4C4C6D;
     color: #FFC947;
+    box-shadow: black 5px 5px 10px;
 }
 
 button:hover {
@@ -161,5 +160,11 @@ button:hover {
     
     25%, 75% {
         transform: rotate(-45deg);
+    }
+}
+
+@media all and (max-width: 800px) {
+    .main {
+        flex-direction: column;
     }
 }
