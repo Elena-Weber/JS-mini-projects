@@ -5,8 +5,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #E8F6EF;
+    color: #4C4C6D;
 }
 
 canvas {
     box-shadow: black 20px 10px 50px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #4C4C6D;
+    color: #FFC947;
+}
+
+button:hover {
+    background-color: #FFC947;
+    color: #4C4C6D;
 }

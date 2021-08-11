@@ -91,12 +91,11 @@ function isGameOver() {
         ctx.fillStyle = "white";
         ctx.font = "50px Verdana";
         let gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
-        gradient.addColorStop("0", " magenta");
-        gradient.addColorStop("0.5", "blue");
-        gradient.addColorStop("1.0", "red");
-      // Fill with gradient
+        gradient.addColorStop("0", "#E8F6EF");
+        gradient.addColorStop("0.5", "#FFC947");
+        gradient.addColorStop("1.0", "#B8DFD8");
         ctx.fillStyle = gradient;
-        ctx.fillText("Game Over!", canvas.width / 6.5, canvas.height / 2);
+        ctx.fillText("Game over!", canvas.width / 7.5, canvas.height / 2);
     }
     return gameOver;
 }
@@ -134,7 +133,7 @@ function changeSnakePosition() {
 }
 
 function drawApple() {
-    ctx.fillStyle = "#FFE194";
+    ctx.fillStyle = "#FFC947";
     ctx.fillRect(appleX * tileCount, appleY * tileCount, tileSize, tileSize);
 }
 
