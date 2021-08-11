@@ -8,7 +8,7 @@ class SnakePart {
     }
 }
 
-let speed = 5;
+let speed = 3;
 
 let tileCount = 20;
 let tileSize = canvas.width / tileCount - 2;
@@ -18,8 +18,8 @@ let headY = 10;
 const snakeParts = [];
 let tailLength = 0;
 
-let appleX = 5;
-let appleY = 5;
+let appleX = Math.floor(Math.random() * 20);
+let appleY = Math.floor(Math.random() * 20);
 
 let inputsXVelocity = 0;
 let inputsYVelocity = 0;
@@ -49,11 +49,15 @@ function drawGame() {
     drawScore();
 
     if (score > 5) {
-        speed = 9;
+        speed = 5;
+    }
+
+    if (score > 7) {
+        speed = 7;
     }
 
     if (score > 10) {
-        speed = 11;
+        speed = 10;
     }
 
     setTimeout(drawGame, 1000 / speed);
@@ -86,24 +90,14 @@ function isGameOver() {
     if (gameOver) {
         ctx.fillStyle = "white";
         ctx.font = "50px Verdana";
-
-        if (gameOver) {
-        ctx.fillStyle = "white";
-        ctx.font = "50px Verdana";
-
-        var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+        let gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
         gradient.addColorStop("0", " magenta");
         gradient.addColorStop("0.5", "blue");
         gradient.addColorStop("1.0", "red");
       // Fill with gradient
         ctx.fillStyle = gradient;
-
         ctx.fillText("Game Over!", canvas.width / 6.5, canvas.height / 2);
     }
-
-    ctx.fillText("Game Over!", canvas.width / 6.5, canvas.height / 2);
-    }
-
     return gameOver;
 }
 
@@ -114,12 +108,12 @@ function drawScore() {
 }
 
 function clearScreen() {
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "#4C4C6D";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
 function drawSnake() {
-    ctx.fillStyle = "green";
+    ctx.fillStyle = "#E8F6EF";
     for (let i = 0; i < snakeParts.length; i++) {
         let part = snakeParts[i];
         ctx.fillRect(part.x * tileCount, part.y * tileCount, tileSize, tileSize);
@@ -130,7 +124,7 @@ function drawSnake() {
         snakeParts.shift(); // remove the further item from the snake parts if have more than our tail size.
     }
 
-    ctx.fillStyle = "orange";
+    ctx.fillStyle = "#B8DFD8";
     ctx.fillRect(headX * tileCount, headY * tileCount, tileSize, tileSize);
 }
 
@@ -140,7 +134,7 @@ function changeSnakePosition() {
 }
 
 function drawApple() {
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "#FFE194";
     ctx.fillRect(appleX * tileCount, appleY * tileCount, tileSize, tileSize);
 }
 
