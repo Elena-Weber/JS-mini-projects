@@ -14,19 +14,12 @@ body {
     justify-content: space-between;
 }
 
-.container-one {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 70px 10px 10px;
-}
-
-.container-two {
+.container-one, .container-two {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px 70px 10px 10px;
+    margin: 10px 50px;
 }
 
 .rules-heading {
@@ -112,23 +105,18 @@ button:hover {
     12% {
         transform: rotateX(240deg);
     }
-    
     24% {
         transform: rotateX(150deg);
     }
-    
     36% {
         transform: rotateX(200deg);
     }
-    
     48% {
         transform: rotateX(175deg);
     }
-    
     60%, 85% {
         transform: rotateX(180deg);
     }
-    
     100% {
         transform: rotateX(0deg);
     }
@@ -157,7 +145,7 @@ button:hover {
     0%, 50%, 100% {
         transform: rotate(0deg);
     }
-    
+
     25%, 75% {
         transform: rotate(-45deg);
     }
