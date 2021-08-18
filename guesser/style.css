@@ -8,25 +8,67 @@ body {
     font-family: 'Tenali Ramakrishna', sans-serif;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
 .block {
-    background-color: blanchedalmond;
+    background-color: #F6DEF6;
     border-radius: 10px;
-    width: 30%;
-    margin-top: 100px;
+    width: 50%;
+    margin-top: 90px;
     padding: 10px;
+    text-align: center;
 }
 
 .inputData {
-    padding: 30px;
+    padding: 20px 35px;
     font-family: 'Tenali Ramakrishna', sans-serif;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 25px;
 }
 
 .btn {
     font-family: 'Tenali Ramakrishna', sans-serif;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
     border: none;
+    font-size: 25px;
+    background-color: #6155A6;
+    color: white;
+}
+
+.btn:hover, .newGame:hover {
+    cursor: pointer;
+}
+
+.heading {
+    background-color: #F6DEF6;
+    border-radius: 10px;
+    padding: 1px 45px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.newGame {
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    padding: 10px 45px;
+    margin: 50px;
+    border-radius: 10px;
+    border: solid 1px #6155A6;
+    font-size: 25px;
+    background-color: #F6DEF6;
+    
 }
