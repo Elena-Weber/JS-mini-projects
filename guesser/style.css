@@ -70,5 +70,23 @@ h2 {
     border: solid 1px #6155A6;
     font-size: 25px;
     background-color: #F6DEF6;
-    
+}
+
+@media all and (max-width: 800px) {
+    .inputData {
+        padding: 10px 15px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .inputData {
+        padding: 5px 10px;
+    }
+    .block {
+        width: 90%;
+    }
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
 }
