@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    background-image: url("https://images.unsplash.com/photo-1455894127589-22f75500213a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=979&q=80");
+    background-image: url("https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -16,7 +16,7 @@ body {
 }
 
 .block {
-    background-color: #F6DEF6;
+    background-color: #bde0fe;
     border-radius: 10px;
     width: 50%;
     margin-top: 90px;
@@ -37,20 +37,26 @@ body {
     padding: 10px 20px;
     margin: 20px;
     border-radius: 10px;
-    border: none;
+    border: solid 1px #bde0fe;
     font-size: 25px;
-    background-color: #6155A6;
+    background-color: #0077b6;
     color: white;
 }
 
-.btn:hover, .newGame:hover {
+.btn:hover {
     cursor: pointer;
+    border: solid 1px #00296b;
+}
+
+.newGame:hover {
+    cursor: pointer;
+    border: solid 1px #bde0fe;
 }
 
 .heading {
-    background-color: #F6DEF6;
+    background-color: #bde0fe;
     border-radius: 10px;
-    padding: 1px 45px;
+    padding: 1px 35px;
     margin-top: 50px;
 }
 
@@ -67,9 +73,10 @@ h2 {
     padding: 10px 45px;
     margin: 50px;
     border-radius: 10px;
-    border: solid 1px #6155A6;
+    border: solid 1px #00296b;
     font-size: 25px;
-    background-color: #F6DEF6;
+    background-color: #00296b;
+    color: white;
 }
 
 @media all and (max-width: 800px) {
