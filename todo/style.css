@@ -1,7 +1,9 @@
 body {
-    background-image: url('https://images.unsplash.com/photo-1519393890420-f28727375fa5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-image: url('https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
 .main {
