@@ -20,10 +20,12 @@ body {
     font-size: 60px;
     color: #ffe8d6;
     -webkit-text-stroke: 1px #cb997e;
+    text-align: center;
 }
 
 h3 {
     color: #ffe8d6;
+    text-align: center;
 }
 
 .inputField {
@@ -144,10 +146,6 @@ li {
 }
 
 @media all and (max-width: 500px) {
-    .main {
-        display: flex;
-        flex-direction: column;
-    }
     .plans, .shopping {
         font-size: 25px;
     }
