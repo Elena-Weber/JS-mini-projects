@@ -1,39 +1,65 @@
 function countDown() {
-    // const XDate = new Date("December 25, 2021 00:00");
-    const XDate = new Date("August 23, 2021 22:54");
+    const xDate = new Date("December 25, 2021 00:00");
+    const nyDate = new Date("December 31, 2021 00:00");
     const now = new Date();
-    const diff = XDate - now;
+    const diffX = xDate - now;
+    const diffNY = nyDate - now;
 
     const msSec = 1000;
     const msMinute = 60 * 1000;
     const msHour = 60 * 60 * 1000;
     const msDay = 24 * 60 * 60 * 1000;
 
-    const displaySeconds = Math.floor((diff%msMinute)/msSec);
-    document.querySelector(".seconds").textContent = displaySeconds;
+    const displaySecondsX = Math.floor((diffX%msMinute)/msSec);
+    document.querySelector(".secondsX").textContent = displaySecondsX;
 
-    const displayMinutes = Math.floor((diff%msHour)/msMinute);
-    document.querySelector(".minutes").textContent = displayMinutes;
+    const displayMinutesX = Math.floor((diffX%msHour)/msMinute);
+    document.querySelector(".minutesX").textContent = displayMinutesX;
 
-    const displayHours = Math.floor((diff%msDay)/msHour);
-    document.querySelector(".hours").textContent = displayHours;
+    const displayHoursX = Math.floor((diffX%msDay)/msHour);
+    document.querySelector(".hoursX").textContent = displayHoursX;
 
-    const displayDays = Math.floor(diff/msDay);
-    document.querySelector(".days").textContent = displayDays;
+    const displayDaysX = Math.floor(diffX/msDay);
+    document.querySelector(".daysX").textContent = displayDaysX;
 
-    if (diff <= 0) {
-        document.querySelector(".seconds").textContent = 0;
-        document.querySelector(".minutes").textContent = 0;
-        document.querySelector(".hours").textContent = 0;
-        document.querySelector(".days").textContent = 0;
+    if (diffX <= 0) {
+        document.querySelector(".secondsX").textContent = 0;
+        document.querySelector(".minutesX").textContent = 0;
+        document.querySelector(".hoursX").textContent = 0;
+        document.querySelector(".daysX").textContent = 0;
         clearInterval(timerID);
         merryXmas();
+    } else if (diffNY <= 0) {
+        document.querySelector(".secondsNY").textContent = 0;
+        document.querySelector(".minutesNY").textContent = 0;
+        document.querySelector(".hoursNY").textContent = 0;
+        document.querySelector(".daysNY").textContent = 0;
+        clearInterval(timerID);
+        happyNewYear();
     }
+
+    const displaySecondsNY = Math.floor((diffNY%msMinute)/msSec);
+    document.querySelector(".secondsNY").textContent = displaySecondsNY;
+
+    const displayMinutesNY = Math.floor((diffNY%msHour)/msMinute);
+    document.querySelector(".minutesNY").textContent = displayMinutesNY;
+
+    const displayHoursNY = Math.floor((diffNY%msDay)/msHour);
+    document.querySelector(".hoursNY").textContent = displayHoursNY;
+
+    const displayDaysNY = Math.floor(diffNY/msDay);
+    document.querySelector(".daysNY").textContent = displayDaysNY;
+
 }
 
 function merryXmas() {
-    const heading = document.querySelector("h1");
+    const heading = document.querySelector(".headingX");
     heading.textContent = "Merry Christmas!";
-    // console.log("Merry Christmas")
 }
+
+function happyNewYear() {
+    const heading = document.querySelector(".headingNY");
+    heading.textContent = "Happy New Year!";
+}
+
 let timerID = setInterval(countDown, 1000);

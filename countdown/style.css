@@ -1,7 +1,19 @@
-.container {
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.submain {
+    display: flex;
+    flex-direction: column;
+    background-color: darkgoldenrod;
+}
+
+.container-one {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: blue;
 }
 
 .xmas {
@@ -18,6 +30,21 @@
     align-items: center;
 }
 
-.days, .hours, .minutes, .seconds {
+.daysX, .hoursX, .minutesX, .secondsX, .daysNY, .hoursNY, .minutesNY, .secondsNY {
     font-size: 25px;
+}
+
+.container-two {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: cadetblue;
+}
+
+.ny {
+    background-color: coral;
+    height: 300px;
+    width: 200px;
+    margin-top: 50px;
+    border: 3px solid black;
 }
