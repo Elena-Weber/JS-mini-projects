@@ -1,8 +1,9 @@
+// the heading
 let text = "Try guessing the number";
 let i = 0;
 let speed = 100;
 
-function type() {
+const type = () => {
     if (i < text.length) {
         document.querySelector(".enter").textContent += text.charAt(i);
         i++;
@@ -25,7 +26,7 @@ input.addEventListener("keypress", (event) => {
     }
 })
 
-function play() {
+function play () {
     const userNum = document.querySelector(".inputData").value;
     if (userNum < 1 || userNum > 30) {
         Swal.fire({
