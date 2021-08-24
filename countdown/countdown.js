@@ -1,6 +1,6 @@
 function countDownX() {
-    // const xDate = new Date("December 25, 2021 00:00");
-    const xDate = new Date("August 24, 2021 12:46");
+    const xDate = new Date("December 25, 2021 00:00");
+    // const xDate = new Date("August 24, 2021 12:46");
     const now = new Date();
     const diffX = xDate - now;
 
