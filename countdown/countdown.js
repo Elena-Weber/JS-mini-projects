@@ -77,3 +77,19 @@ function happyNewYear() {
 
 let timerX = setInterval(countDownX, 1000);
 let timerNY = setInterval(countDownNY, 1000);
+
+const xBtn = document.querySelector(".xBtn");
+xBtn.addEventListener("click", () => {
+    document.querySelector(".xSong").play();
+})
+xBtn.addEventListener("dblclick", () => {
+    document.querySelector(".xSong").pause();
+})
+
+const nyBtn = document.querySelector(".nyBtn");
+nyBtn.addEventListener("click", () => {
+    document.querySelector(".nySong").play();
+})
+nyBtn.addEventListener("dblclick", () => {
+    document.querySelector(".nySong").pause();
+})
