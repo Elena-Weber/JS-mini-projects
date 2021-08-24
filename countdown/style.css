@@ -1,6 +1,9 @@
 .main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: darkgreen;
 }
 
 .submain {
@@ -14,13 +17,33 @@
     justify-content: center;
     flex-wrap: wrap;
     background-color: blue;
+    /* align-items: stretch; */
+}
+
+.container-two {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: cadetblue;
+}
+
+.headingX, .headingNY {
+    text-align: center;
 }
 
 .xmas {
     background-color: violet;
-    height: 300px;
-    width: 200px;
-    margin-top: 50px;
+    height: 200px;
+    width: 130px;
+    margin: 30px;
+    border: 3px solid black;
+}
+
+.ny {
+    background-color: coral;
+    height: 200px;
+    width: 130px;
+    margin: 30px;
     border: 3px solid black;
 }
 
@@ -32,19 +55,4 @@
 
 .daysX, .hoursX, .minutesX, .secondsX, .daysNY, .hoursNY, .minutesNY, .secondsNY {
     font-size: 25px;
-}
-
-.container-two {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: cadetblue;
-}
-
-.ny {
-    background-color: coral;
-    height: 300px;
-    width: 200px;
-    margin-top: 50px;
-    border: 3px solid black;
 }
