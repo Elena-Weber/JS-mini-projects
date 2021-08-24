@@ -1,22 +1,32 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1608539660949-16799e893a95?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1005&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+}
+
 .main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color: darkgreen;
+    /* background-color: #006400; */
+    margin-top: 100px;
 }
 
 .submain {
     display: flex;
     flex-direction: column;
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .container-one {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    background-color: blue;
+    /* background-color: blue; */
     /* align-items: stretch; */
 }
 
@@ -24,7 +34,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 
 .headingX, .headingNY {
@@ -32,17 +42,17 @@
 }
 
 .xmas {
-    background-color: violet;
+    background-color: rgba(251, 248, 249, 0.82);
     height: 200px;
-    width: 130px;
+    width: 150px;
     margin: 30px;
     border: 3px solid black;
 }
 
 .ny {
-    background-color: coral;
+    background-color: rgba(251, 248, 249, 0.82);
     height: 200px;
-    width: 130px;
+    width: 150px;
     margin: 30px;
     border: 3px solid black;
 }
@@ -54,5 +64,5 @@
 }
 
 .daysX, .hoursX, .minutesX, .secondsX, .daysNY, .hoursNY, .minutesNY, .secondsNY {
-    font-size: 25px;
+    font-size: 35px;
 }
