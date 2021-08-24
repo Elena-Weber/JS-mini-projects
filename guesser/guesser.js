@@ -1,3 +1,17 @@
+let text = "Try guessing the number";
+let i = 0;
+let speed = 100;
+
+function type() {
+    if (i < text.length) {
+        document.querySelector(".enter").textContent += text.charAt(i);
+        i++;
+        setTimeout(type, speed);
+    }
+}
+type();
+
+// the game itself
 const input = document.querySelector(".inputData");
 const btn = document.querySelector(".btn");
 const compNum = Math.floor(Math.random()*30+1);
