@@ -91,6 +91,7 @@ h2 {
     }
     .block {
         width: 90%;
+        margin-top: 50px;
     }
     h1 {
         font-size: 30px;
