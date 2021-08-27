@@ -85,6 +85,7 @@ body {
     background-color: rgba(251, 248, 249, 0.8);
     padding: 15px 50px;
     border: 3px solid white;
+    text-align: center;
 }
 
 button {
