@@ -1,6 +1,11 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 .perfumes {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .perf {
@@ -10,7 +15,7 @@
     align-items: center;
     text-align: center;
     width: 300px;
-    background-color: brown;
+    /* background-color: brown; */
     padding: 10px;
     margin: 10px;
 }
