@@ -54,14 +54,18 @@ border: solid 0.5px #ccc;
 #search:focus {
     border: 1px solid #555;
 }
-.search-div {
-    text-align: center;
+
+a {
+    color: #555;
+    margin: 5px;
+    font-size: 20px;
 }
 
 .search-div {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 @media all and (max-width: 800px) {

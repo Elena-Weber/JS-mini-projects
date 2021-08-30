@@ -5,6 +5,13 @@
     align-items: center;
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 button {
     padding: 10px 20px;
     margin: 10px;
