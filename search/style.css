@@ -33,6 +33,10 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+.perf:hover {
+border: solid 0.5px #ccc;
+}
+
 #search {
     padding: 10px;
     margin: 10px;
