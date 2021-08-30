@@ -48,6 +48,7 @@ border: solid 0.5px #ccc;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
+    caret-color: #555;
 }
 
 #search:focus {
