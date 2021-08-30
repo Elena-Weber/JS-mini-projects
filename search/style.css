@@ -4,6 +4,14 @@ body {
 
 .heading {
     text-align: center;
+    color: #2c2c2c;
+    letter-spacing: .25em;
+}
+
+.heading:hover {
+    text-shadow: 
+        3px 3px 0px #d5d5d5, 
+        4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .perfumes {
@@ -20,7 +28,7 @@ body {
     text-align: center;
     width: 250px;
     padding: 10px;
-    margin: 10px;
+    margin: 20px 10px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
