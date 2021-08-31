@@ -1,3 +1,24 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -12,9 +33,46 @@
     align-items: center;
 }
 
+.project {
+    width: 200px;
+    height: 150px;
+    border: 1px solid white;
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 10px;
+    margin: 10px;
+    transition: 0.4s;
+    border-radius: 15px;
+    color: white;
+}
+
+.project:hover {
+    transform: scale(0.9, 0.9);
+    /* background-color: black;
+    opacity: 0.5; */
+}
+
 button {
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     margin: 10px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    /* color: white; */
+}
+
+button:hover {
+    background-color: white;
+    /* color: black; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
 }
