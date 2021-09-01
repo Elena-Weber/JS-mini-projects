@@ -1,0 +1,56 @@
+body {
+    background-color: burlywood;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.heading {
+    text-align: center;
+}
+
+.container {
+    background-color: chocolate;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+#blocks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.block {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+form {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+input {
+    padding: 5px;
+    border: none;
+}
+
+#tip {
+    display: none;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+}

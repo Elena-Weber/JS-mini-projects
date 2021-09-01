@@ -6,20 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1 class="heading">Tip Calculator</h1>
     <div class="container">
-        <div>Tip Calculator</div>
-        <form action="">
+        
+        <form>
             <div>
                 <h2>Bill</h2>
-                <span>$</span><input type="text" placeholder="Bill total" id="bill">
+                <span>$</span>
+                <input type="text" placeholder="Bill total" id="bill">
             </div>
             <div>
                 <h2>Number of people</h2>
                 <input type="text" placeholder="Number of people" id="people">
             </div>
-            <div>
+            <div class="btns">
                 <button id="add_tip">Add an appropriate tip</button>
                 <select name="tip" id="tip">
                     <option disabled value="">Select an option</option>
@@ -27,7 +32,7 @@
                     <option value="">Could be better (5%)</option>
                     <option value="">Ok (10%)</option>
                     <option value="">Not too bad (15%)</option>
-                    <option value="">Good (20%)</option>
+                    <option selected value="">Good (20%)</option>
                     <option value="">Very good (25%)</option>
                     <option value="">Excellent (30%)</option>
                     <option value="">Remarkable (50%)</option>
@@ -36,9 +41,9 @@
                 <button id="calc">Divide and conquer!</button>
             </div>
         </form>
-    <div>
+    <div id="blocks">
         <div class="block">
-            <h3>Bill (before tip):</h3>
+            <h3>Bill:</h3>
             <span>$</span>
             <span id="billPerPerson"></span>
             <span>per person</span>
@@ -57,6 +62,7 @@
         </div>
     </div>
     </div>
+
     <script src="tip_calc.js"></script>
 </body>
 </html>
