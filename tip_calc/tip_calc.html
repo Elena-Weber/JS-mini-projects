@@ -8,8 +8,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>Tip Calculator</div>
-
+    <div class="container">
+        <div>Tip Calculator</div>
+        <form action="">
+            <div>
+                <h2>Bill</h2>
+                <span>$</span><input type="text" placeholder="Bill total" id="bill">
+            </div>
+            <div>
+                <h2>Number of people</h2>
+                <input type="text" placeholder="Number of people" id="people">
+            </div>
+            <div>
+                <button id="add_tip">Add an appropriate tip</button>
+                <select name="tip" id="tip">
+                    <option disabled value="">Select an option</option>
+                    <option value="">No tip from me (0)</option>
+                    <option value="">Could be better (5%)</option>
+                    <option value="">Ok (10%)</option>
+                    <option value="">Not too bad (15%)</option>
+                    <option value="">Good (20%)</option>
+                    <option value="">Very good (25%)</option>
+                    <option value="">Excellent (30%)</option>
+                    <option value="">Remarkable (50%)</option>
+                    <option value="">Outstanding (100%)</option>
+                </select>
+                <button id="calc">Divide and conquer!</button>
+            </div>
+        </form>
+    <div>
+        <div class="block">
+            <h3>Bill (before tip):</h3>
+            <span>$</span>
+            <span id="billPerPerson"></span>
+            <span>per person</span>
+        </div>
+        <div class="block">
+            <h3>Tip:</h3>
+            <span>$</span>
+            <span id="tipPerPerson"></span>
+            <span>per person</span>
+        </div>
+        <div class="block">
+            <h3>Total:</h3>
+            <span>$</span>
+            <span id="totalPerPerson"></span>
+            <span>per person</span>
+        </div>
+    </div>
+    </div>
     <script src="tip_calc.js"></script>
 </body>
 </html>

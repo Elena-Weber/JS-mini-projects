@@ -34,7 +34,6 @@ function countDownX() {
 
 function countDownNY() {
     const nyDate = new Date("January 1, 2022 00:00");
-    // const nyDate = new Date("August 24, 2021 12:46");
     const now = new Date();
     const diffNY = nyDate - now;
 
@@ -76,6 +75,7 @@ function happyNewYear() {
 }
 
 let timerX = setInterval(countDownX, 1000);
+
 let timerNY = setInterval(countDownNY, 1000);
 
 const xBtn = document.querySelector(".xBtn");
