@@ -1,23 +1,23 @@
 body {
-    background-image: linear-gradient(to right, #373B44 , #4286f4);
+    background-image: linear-gradient(to right, #5aa9e6, #7fc8f8);
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 .heading {
     text-align: center;
-    color: white;
+    color: #f9f9f9;
 }
 
 .container {
-    background-color: white;
+    background-color: #f9f9f9;
     border-radius: 10px;
     padding: 30px;
+    margin: 30px;
     width: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    opacity: 70%;
 }
 
 #blocks {
@@ -27,11 +27,11 @@ body {
 }
 
 .block {
-    background-color: cornflowerblue;
+    background-color: #ff6392;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
-
+    color: #f9f9f9;
 }
 
 form {
@@ -40,9 +40,11 @@ form {
 }
 
 input {
-    padding: 5px;
-    margin: 5px;
-    /* border: none; */
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    border: 1px solid #5aa9e6;
+    border-radius: 7px;
 }
 
 #tip {
@@ -58,5 +60,11 @@ button {
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    background-color: #ffe45e;
+    font-size: 15px;
     /* width: 50%; */
+}
+
+button:hover {
+    background-color: #7fc8f8;
 }
