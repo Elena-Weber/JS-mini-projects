@@ -6,13 +6,14 @@ body {
 .heading {
     text-align: center;
     color: #f9f9f9;
+    margin: 40px;
 }
 
 .container {
     background-color: #f9f9f9;
     border-radius: 10px;
     padding: 30px;
-    margin: 30px;
+    margin: 50px;
     width: 600px;
     display: flex;
     flex-direction: row;
@@ -36,8 +37,7 @@ body {
 }
 
 form {
-    /* display: flex;
-    flex-direction: column; */
+
 }
 
 input {
