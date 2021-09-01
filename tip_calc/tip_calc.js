@@ -17,6 +17,8 @@ console.log(billPerPerson);
 console.log(tipPerPerson);
 console.log(totalPerPerson);
 
-
+document.querySelector("#billPerPerson").textContent = billPerPerson.toFixed(2);
+document.querySelector("#tipPerPerson").textContent = tipPerPerson.toFixed(2);
+document.querySelector("#totalPerPerson").textContent = totalPerPerson.toFixed(2);
 
 }
