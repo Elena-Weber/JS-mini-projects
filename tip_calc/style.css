@@ -1,31 +1,36 @@
 body {
-    background-color: burlywood;
+    background-image: linear-gradient(to right, #373B44 , #4286f4);
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 .heading {
     text-align: center;
+    color: white;
 }
 
 .container {
-    background-color: chocolate;
+    background-color: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     width: 600px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 70%;
 }
 
 #blocks {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .block {
     background-color: cornflowerblue;
     border-radius: 10px;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
 
 }
 
@@ -36,7 +41,8 @@ form {
 
 input {
     padding: 5px;
-    border: none;
+    margin: 5px;
+    /* border: none; */
 }
 
 #tip {
@@ -52,5 +58,5 @@ button {
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
-    width: 50%;
+    /* width: 50%; */
 }
