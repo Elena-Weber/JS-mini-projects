@@ -1,8 +1,13 @@
 const btn = document.querySelector("#calc");
 btn.addEventListener("click", calculate);
 
-const tip = document.querySelector("#add_tip");
-tip.addEventListener("click", tipOptions);
+const addTip = document.querySelector("#add_tip");
+addTip.addEventListener("click", tipOptions);
+
+const reset = document.querySelector("#reset");
+reset.addEventListener("click", () => {
+    location.reload();
+});
 
 function calculate(event) {
     event.preventDefault();
@@ -17,16 +22,14 @@ function calculate(event) {
             text: 'Please, enter the necessary information.',
         })
     }
+
     let billPerPerson = bill/people;
     let tipPerPerson = (bill * tip) / people;
     let totalPerPerson = billPerPerson + tipPerPerson;
-console.log(billPerPerson);
-console.log(tipPerPerson);
-console.log(totalPerPerson);
 
-document.querySelector("#billPerPerson").textContent = billPerPerson.toFixed(2);
-document.querySelector("#tipPerPerson").textContent = tipPerPerson.toFixed(2);
-document.querySelector("#totalPerPerson").textContent = totalPerPerson.toFixed(2);
+    document.querySelector("#billPerPerson").textContent = billPerPerson.toFixed(2);
+    document.querySelector("#tipPerPerson").textContent = tipPerPerson.toFixed(2);
+    document.querySelector("#totalPerPerson").textContent = totalPerPerson.toFixed(2);
 
 }
 

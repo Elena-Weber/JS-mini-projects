@@ -71,10 +71,19 @@ button {
     padding: 10px;
     margin: 10px;
     background-color: #ffe45e;
-    font-size: 15px;
+    font-size: 17px;
     /* width: 50%; */
 }
 
 button:hover {
     background-color: #7fc8f8;
+}
+
+#reset {
+    background-color: #5aa9e6;
+    color: #f9f9f9;
+}
+
+#reset:hover {
+    background-color: #ff6392;
 }
