@@ -3,13 +3,18 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+.tip-calc {
+    display: flex;
+    /* flex-direction: row; */
+}
+
 .heading {
     text-align: center;
     color: #f9f9f9;
     margin: 40px;
 }
 
-.container {
+.container-one {
     background-color: #f9f9f9;
     border-radius: 10px;
     padding: 30px;
@@ -86,4 +91,32 @@ button:hover {
 
 #reset:hover {
     background-color: #ff6392;
+}
+
+.container-two {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 50px;
+    width: 600px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+@media all and (max-width: 800px) {
+    .tip-calc {
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .container-one {
+        padding: 20px;
+        margin: 30px;
+        width: 300px;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
 }
