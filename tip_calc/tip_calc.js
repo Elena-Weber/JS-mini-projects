@@ -1,6 +1,9 @@
 const btn = document.querySelector("#calc");
 btn.addEventListener("click", calculate);
 
+const tip = document.querySelector("#add_tip");
+tip.addEventListener("click", tipOptions);
+
 function calculate(event) {
     event.preventDefault();
     const bill = document.querySelector("#bill").value;
@@ -11,7 +14,7 @@ function calculate(event) {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Please, enter the necessary information',
+            text: 'Please, enter the necessary information.',
         })
     }
     let billPerPerson = bill/people;
@@ -25,4 +28,10 @@ document.querySelector("#billPerPerson").textContent = billPerPerson.toFixed(2);
 document.querySelector("#tipPerPerson").textContent = tipPerPerson.toFixed(2);
 document.querySelector("#totalPerPerson").textContent = totalPerPerson.toFixed(2);
 
+}
+
+function tipOptions(event) {
+    event.preventDefault();
+    const tip = document.querySelector("#tip");
+    tip.style.display = "block";
 }
