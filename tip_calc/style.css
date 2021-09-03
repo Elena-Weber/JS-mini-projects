@@ -1,6 +1,7 @@
 body {
     background-image: linear-gradient(to right, #5aa9e6, #7fc8f8);
     font-family: 'Noto Sans KR', sans-serif;
+    height: 100vh;
 }
 
 .tip-calc {
@@ -32,10 +33,10 @@ body {
     padding: 30px;
     margin: 50px;
     width: 600px;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 #blocks {
