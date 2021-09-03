@@ -38,3 +38,18 @@ function tipOptions(event) {
     const tip = document.querySelector("#tip");
     tip.style.display = "block";
 }
+
+const checkbox = document.querySelector("#checkbox");
+const checkedBox = document.querySelector("#checkedBox");
+checkbox.addEventListener("click", () => {
+    if (checkbox.checked) {
+        checkedBox.style.display = "block";
+    } else {
+        checkedBox.style.display = "none";
+    }
+})
+
+const result = document.querySelector("#result");
+result.addEventListener("click", (event) => {
+    event.preventDefault();
+})

@@ -33,10 +33,18 @@ body {
     padding: 30px;
     margin: 50px;
     width: 600px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#checkedBox {
+    display: none;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
 
 #blocks {
@@ -54,9 +62,9 @@ body {
     text-align: center;
 }
 
-form {
+/* form {
 
-}
+} */
 
 input {
     padding: 10px;
@@ -90,7 +98,6 @@ button {
     margin: 10px;
     background-color: #ffe45e;
     font-size: 17px;
-    /* width: 50%; */
 }
 
 button:hover {
