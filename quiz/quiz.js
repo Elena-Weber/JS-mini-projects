@@ -23,7 +23,7 @@ if (document.querySelector("#answer4").checked) {
 }
 if (document.querySelector("#answer5").checked) {
     points ++;
-    console.log(points);
+    // console.log(points);
 }
 if (document.querySelector("#answer6").checked) {
     points ++;
@@ -43,7 +43,7 @@ if (document.querySelector("#answer9").checked) {
 }
 if (document.querySelector("#answer10").checked) {
     points ++;
-    console.log(points);
+    // console.log(points);
 }
 if (document.querySelector("#answer11").checked) {
     points ++;
@@ -63,7 +63,7 @@ if (document.querySelector("#answer14").checked) {
 }
 if (document.querySelector("#answer15").checked) {
     points ++;
-    console.log(points);
+    // console.log(points);
 }
 if (document.querySelector("#answer16").checked) {
     points ++;
@@ -83,7 +83,7 @@ if (document.querySelector("#answer19").checked) {
 }
 if (document.querySelector("#answer20").checked) {
     points ++;
-    console.log(points);
+    // console.log(points);
 }
 if (document.querySelector("#answer21").checked) {
     points ++;
@@ -105,24 +105,15 @@ if (document.querySelector("#answer25").checked) {
     points ++;
     console.log(points);
 }
-if (document.querySelector("#answer26").checked) {
-    points ++;
-    // console.log(points);
-}
-if (document.querySelector("#answer27").checked) {
-    points ++;
-    // console.log(points);
-}
-if (document.querySelector("#answer28").checked) {
-    points ++;
-    // console.log(points);
-}
-if (document.querySelector("#answer29").checked) {
-    points ++;
-    // console.log(points);
-}
-if (document.querySelector("#answer30").checked) {
-    points ++;
-    console.log(points);
+if (points <= 5) {
+    console.log("Beginner");
+} else if (points > 5 && points <= 10) {
+    console.log("Elementary");
+} else if (points > 10 && points <= 15) {
+    console.log("Pre-Intermediate");
+} else if (points > 15 && points <= 20) {
+    console.log("Intermediate");
+} else {
+    console.log("Upper Intermediate");
 }
 }
