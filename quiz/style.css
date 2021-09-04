@@ -50,3 +50,20 @@ body {
     background-color: #9381ff;
     color: #f8f7ff;
 }
+
+@media all and (max-width: 800px) {
+    #heading {
+        font-size: 25px;
+    }
+    h3, .btn {
+        font-size: 15px;
+    }
+    .question {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px 10px 10px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
