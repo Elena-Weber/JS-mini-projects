@@ -105,17 +105,21 @@ if (document.querySelector("#answer25").checked) {
     points ++;
     console.log(points);
 }
+let level = '';
 if (points <= 5) {
-    console.log("Beginner");
+    level = "Beginner";
 } else if (points > 5 && points <= 10) {
-    console.log("Elementary");
+    level = "Elementary";
 } else if (points > 10 && points <= 15) {
-    console.log("Pre-Intermediate");
+    level = "Pre-Intermediate";
 } else if (points > 15 && points <= 20) {
-    console.log("Intermediate");
+    level = "Intermediate";
 } else if (points > 20 && points <= 24) {
-    console.log("Upper Intermediate");
+    level = "Upper Intermediate";
 } else {
-    console.log("Advanced");
+    level = "Advanced";
 }
+document.querySelector("#result-section").style.display = "block";
+document.querySelector("#point").textContent = points;
+document.querySelector("#level").textContent = level;
 }

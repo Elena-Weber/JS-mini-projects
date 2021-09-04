@@ -1,0 +1,20 @@
+body {
+    background-color: #f8f7ff;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#result-section {
+    display: none;
+}
+.btn {
+    background-color: #b8b8ff;
+}
+
+.btn:hover {
+    background-color: #9381ff;
+    color: #f8f7ff;
+}
