@@ -113,7 +113,9 @@ if (points <= 5) {
     console.log("Pre-Intermediate");
 } else if (points > 15 && points <= 20) {
     console.log("Intermediate");
-} else {
+} else if (points > 20 && points <= 24) {
     console.log("Upper Intermediate");
+} else {
+    console.log("Advanced");
 }
 }

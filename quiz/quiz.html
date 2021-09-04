@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
+        <h1>English Vocabulary and Grammar Quiz</h1></div>
     <form>
         <div>
             <label for="q1">Can I park here?</label>
@@ -159,7 +161,10 @@
             <input type="radio" name="q25">district
             <input type="radio" name="q25" id="answer25">vicinity
         </div><br>
-        <button class="btn">Check</button>
+        <button class="btn">Check my result</button>
+        <h3>You got <span id="point"></span> points</h3>
+        <h3>Your English level is <span id="level"></span></h3>
+        <p>* Please note the evaluation of your English level is just approximate.</p>
     </form>
 
     <script src="quiz.js"></script>
