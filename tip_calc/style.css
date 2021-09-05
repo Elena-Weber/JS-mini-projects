@@ -65,9 +65,9 @@ body {
     text-align: center;
 }
 
-/* form {
-
-} */
+#proposed-tip {
+    display: none;
+}
 
 input {
     padding: 10px;
