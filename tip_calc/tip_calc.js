@@ -53,25 +53,110 @@ const result = document.querySelector("#result");
 result.addEventListener("click", (event) => {
     event.preventDefault();
     let points = 0;
-    if (document.querySelector(".food1").checked || document.querySelector(".drink1").checked || document.querySelector(".service1").checked || document.querySelector(".atmosphere1").checked || document.querySelector(".impression1").checked) {
+    if (document.querySelector(".food1").checked) {
         points += 1;
         console.log(points);
     }
-    if (document.querySelector(".food2").checked || document.querySelector(".drink2").checked || document.querySelector(".service2").checked || document.querySelector(".atmosphere2").checked || document.querySelector(".impression2").checked) {
+    if (document.querySelector(".drink1").checked) {
+        points += 1;
+        console.log(points);
+    }
+    if (document.querySelector(".service1").checked) {
+        points += 1;
+        console.log(points);
+    }
+    if (document.querySelector(".atmosphere1").checked) {
+        points += 1;
+        console.log(points);
+    }
+    if (document.querySelector(".impression1").checked) {
+        points += 1;
+        console.log(points);
+    }
+
+    if (document.querySelector(".food2").checked) {
         points += 2;
         console.log(points);
     }
-    if (document.querySelector(".food3").checked || document.querySelector(".drink3").checked || document.querySelector(".service3").checked || document.querySelector(".atmosphere3").checked || document.querySelector(".impression3").checked) {
+    if (document.querySelector(".drink2").checked) {
+        points += 2;
+        console.log(points);
+    }
+    if (document.querySelector(".service2").checked) {
+        points += 2;
+        console.log(points);
+    }
+    if (document.querySelector(".atmosphere2").checked) {
+        points += 2;
+        console.log(points);
+    }
+    if (document.querySelector(".impression2").checked) {
+        points += 2;
+        console.log(points);
+    }
+
+    if (document.querySelector(".food3").checked) {
         points += 3;
         console.log(points);
     }
-    if (document.querySelector(".food4").checked || document.querySelector(".drink4").checked || document.querySelector(".service4").checked || document.querySelector(".atmosphere4").checked || document.querySelector(".impression4").checked) {
+    if (document.querySelector(".drink3").checked) {
+        points += 3;
+        console.log(points);
+    }
+    if (document.querySelector(".service3").checked) {
+        points += 3;
+        console.log(points);
+    }
+    if (document.querySelector(".atmosphere3").checked) {
+        points += 3;
+        console.log(points);
+    }
+    if (document.querySelector(".impression3").checked) {
+        points += 3;
+        console.log(points);
+    }
+
+    if (document.querySelector(".food4").checked) {
         points += 4;
         console.log(points);
     }
-    if (document.querySelector(".food5").checked || document.querySelector(".drink5").checked || document.querySelector(".service5").checked || document.querySelector(".atmosphere5").checked || document.querySelector(".impression5").checked) {
+    if (document.querySelector(".drink4").checked) {
+        points += 4;
+        console.log(points);
+    }
+    if (document.querySelector(".service4").checked) {
+        points += 4;
+        console.log(points);
+    }
+    if (document.querySelector(".atmosphere4").checked) {
+        points += 4;
+        console.log(points);
+    }
+    if (document.querySelector(".impression4").checked) {
+        points += 4;
+        console.log(points);
+    }
+
+    if (document.querySelector(".food5").checked) {
         points += 5;
         console.log(points);
     }
+    if (document.querySelector(".drink5").checked) {
+        points += 5;
+        console.log(points);
+    }
+    if (document.querySelector(".service5").checked) {
+        points += 5;
+        console.log(points);
+    }
+    if (document.querySelector(".atmosphere5").checked) {
+        points += 5;
+        console.log(points);
+    }
+    if (document.querySelector(".impression5").checked) {
+        points += 5;
+        console.log(points);
+    }
+
     
 })
