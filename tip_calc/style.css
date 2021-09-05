@@ -6,13 +6,14 @@ body {
 
 .tip-calc {
     display: flex;
-    /* flex-direction: row; */
+    justify-content: space-evenly;
 }
 
 .heading {
     text-align: center;
     color: #f9f9f9;
     margin: 40px;
+    font-size: 40px;
 }
 
 .container-one {
@@ -20,7 +21,7 @@ body {
     border-radius: 10px;
     padding: 30px;
     margin: 50px;
-    width: 600px;
+    width: 35%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -32,7 +33,7 @@ body {
     border-radius: 10px;
     padding: 30px;
     margin: 50px;
-    width: 600px;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,10 +117,8 @@ button:hover {
     background-color: #ff6392;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
     .tip-calc {
-        flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
     }
     .container-one {
@@ -133,5 +132,17 @@ button:hover {
         padding: 20px;
         margin: 30px;
         width: 70%;
+    }
+}
+@media all and (max-width: 800px) {
+    .tip-calc {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media all and (max-width: 500px) {
+    .tip-calc {
+        flex-direction: column;
+        align-items: center;
     }
 }
