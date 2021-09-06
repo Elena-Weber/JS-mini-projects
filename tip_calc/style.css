@@ -133,6 +133,9 @@ button:hover {
         margin: 30px;
         width: 70%;
     }
+    .heading {
+        margin: 30px;
+    }
 }
 @media all and (max-width: 800px) {
     .tip-calc {
@@ -144,5 +147,8 @@ button:hover {
     .tip-calc {
         flex-direction: column;
         align-items: center;
+    }
+    .heading {
+        margin: 20px;
     }
 }
