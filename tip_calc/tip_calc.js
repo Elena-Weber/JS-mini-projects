@@ -49,6 +49,12 @@ checkbox.addEventListener("click", () => {
     }
 })
 
+const refuse = document.querySelector("#refuse");
+refuse.addEventListener("click", () => {
+    checkedBox.style.display = "none";
+    checkbox.checked = false;
+})
+
 const result = document.querySelector("#result");
 result.addEventListener("click", (event) => {
     event.preventDefault();
