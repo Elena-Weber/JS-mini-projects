@@ -41,6 +41,15 @@ let calculate = (event) => {
     document.querySelector("#tipPerPerson").textContent = tipPerPerson.toFixed(2);
     document.querySelector("#totalPerPerson").textContent = totalPerPerson.toFixed(2);
 
+    if (isNaN(billPerPerson) || people === "0") {
+        document.querySelector("#billPerPerson").textContent = "";
+    }
+    if (isNaN(tipPerPerson) || people === "0") {
+        document.querySelector("#tipPerPerson").textContent = "";
+    }
+    if (isNaN(totalPerPerson) || people === "0") {
+        document.querySelector("#totalPerPerson").textContent = "";
+    }
 }
 
 const btn = document.querySelector("#calc");
