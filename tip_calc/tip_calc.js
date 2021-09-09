@@ -9,11 +9,27 @@ let calculate = (event) => {
     const people = document.querySelector("#people").value;
     const tip = document.querySelector("#tip").value;
 
-    if (bill === "" || people === "" || people <=0 || bill <= 0) {
+    if (people <= 0 || bill <= 0) {
         Swal.fire({
             icon: 'error',
-            title: 'Oops...',
-            text: 'Please, enter the necessary information.',
+            title: 'Try again.',
+            text: 'Please, enter numbers greater than 0 into both the input fields.',
+        })
+    }
+
+    if (isNaN(bill) || isNaN(people)) {
+        Swal.fire({
+            icon: 'error',
+            title: "Oops... Letters won't work here.",
+            text: 'Please, enter numbers greater than 0 into both the input fields.',
+        })
+    }
+
+    if (bill === "" || people === "") {
+        Swal.fire({
+            icon: 'error',
+            title: "Oops... Input fields can't be empty.",
+            text: 'Please, enter numbers greater than 0 into both the input fields.',
         })
     }
 
