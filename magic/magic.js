@@ -22,3 +22,8 @@ const options = ["It is certain.",
 "Signs point to yes.",
 "Very doubtful."
 ];
+
+btn.addEventListener("click", () => {
+    let randomAnswer = options[Math.floor(Math.random() * options.length)];
+    
+})
