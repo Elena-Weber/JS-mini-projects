@@ -13,14 +13,20 @@ body {
 
 h1 {
     text-align: center;
-    margin: 50px;
+    margin-top: 50px;
     padding: 20px;
     text-shadow: 0 0 3px #fff;
+}
+
+img {
+    width: 250px;
+    margin: 40px;
 }
 
 .btn {
     background-color: transparent;
     padding: 20px;
+    margin: 10px;
     font-size: 30px;
     width: 40%;
     border-color: white;
@@ -40,9 +46,9 @@ h1 {
     display: none;
     background-color: transparent;
     text-align: center;
-    margin: 50px;
+    margin-top: 40px;
     padding: 30px;
-    font-size: 25px;
+    font-size: 30px;
     text-shadow: 0 0 3px #fff;
 }
 
@@ -52,27 +58,71 @@ h1 {
         font-size: 30px;
     }
     .btn {
-        font-size: 20px;
+        font-size: 30px;
+        margin: 10px;
+        padding: 25px;
         width: 70%;
     }
     .btn:hover {
-        font-size: 25px;
-        padding: 15px;
+        font-size: 30px;
+        padding: 25px;
     }
     #answers {
-        margin: 20px;
+        margin-top: 20px;
+    }
+    img {
+        width: 250px;
+        margin: 40px;
+    }
+    #answers {
+        padding: 15px;
+        font-size: 30px;
     }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
     h1 {
-        /* margin: 50px; */
-        /* padding: 20px; */
+        font-size: 25px;
+    }
+    .btn {
+        padding: 20px;
+        font-size: 25px;
+    }
+    .btn:hover {
+        padding: 20px;
+        font-size: 25px;
+    }
+    img {
+        width: 200px;
+        margin: 30px;
+    }
+    #answers {
+        padding: 10px;
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    h1 {
+        margin: 20px;
+        padding: 10px 30px;
         font-size: 20px;
     }
-    /* .btn {
+    .btn {
         padding: 20px;
         font-size: 20px;
-        width: 70%;
-    } */
+    }
+    .btn:hover {
+        padding: 20px;
+        font-size: 20px;
+    }
+    img {
+        width: 150px;
+        margin: 10px;
+    }
+    #answers {
+        margin: 10px 0;
+        font-size: 20px;
+        padding: 10px;
+    }
 }
