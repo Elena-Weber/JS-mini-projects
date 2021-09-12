@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+    color: white;
+}
+
+.btn {
+    background-color: cadetblue;
+    padding: 20px;
+    font-size: 30px;
+    width: 40%;
+}
+
+#answers {
+    display: none;
+    background-color: crimson;
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+}
