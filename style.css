@@ -35,7 +35,7 @@ body {
 
 .project {
     width: 200px;
-    height: 150px;
+    height: 170px;
     border: 1px solid white;
     text-align: center;
     /* align-items: center; */
@@ -64,19 +64,19 @@ button {
     /* color: white; */
 }
 
-button:hover {
+/* button:hover { */
     /* background-color: white;
     opacity: 0.5; */
     /* color: black; */
-}
+/* } */
 
 a {
     text-decoration: none;
     color: white;
 }
 
-a:hover {
+/* a:hover { */
     /* color: black; */
 
-}
+/* } */
 
