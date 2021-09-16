@@ -41,6 +41,11 @@ body {
     color: green;
 }
 
+#level {
+    color: #9381ff;
+    text-transform: uppercase;
+}
+
 .btn {
     background-color: #b8b8ff;
     padding: 15px;
