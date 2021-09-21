@@ -1,0 +1,8 @@
+body {
+    background-color: cadetblue;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
