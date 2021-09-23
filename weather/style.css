@@ -18,11 +18,12 @@ body {
     /* border: 1px solid black; */
 }
 
-input {
+#input {
     margin: 10px;
     padding: 10px;
     border-radius: 8px;
     font-size: 20px;
+    width: 60%;
 }
 
 /* #city {
