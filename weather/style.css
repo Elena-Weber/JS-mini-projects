@@ -26,12 +26,8 @@ body {
     width: 60%;
 }
 
-/* #city {
-    border: 1px solid black;
-    margin: 20px;
+#search {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px 15px;
 }
-
-#date {
-    border: 1px solid black;
-    margin: 20px;
-} */
