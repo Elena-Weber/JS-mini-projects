@@ -9,11 +9,12 @@ body {
     align-items: center;
 }
 
-.temp_block {
+.block {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    /* border: 1px solid black; */
 }
 
 input {
