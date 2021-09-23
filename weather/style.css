@@ -1,5 +1,6 @@
 body {
     background-color: cadetblue;
+    font-size: 20px;
 }
 
 #container {
@@ -24,10 +25,12 @@ input {
     font-size: 20px;
 }
 
-#city {
-    font-size: 20px;
+/* #city {
+    border: 1px solid black;
+    margin: 20px;
 }
 
 #date {
-    font-size: 18px;
-}
+    border: 1px solid black;
+    margin: 20px;
+} */
