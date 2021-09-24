@@ -1,6 +1,8 @@
 body {
-    background-color: cadetblue;
+    background: linear-gradient(180deg, rgba(40,75,99,1) 0%, rgba(60,110,113,1) 100%) fixed;
     font-size: 20px;
+    color: #ffffff;
+    margin: auto;
 }
 
 #main {
@@ -14,7 +16,8 @@ body {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    margin-top: 20px;
 }
 
 .block {
