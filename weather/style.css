@@ -1,7 +1,7 @@
 body {
-    background: linear-gradient(180deg, rgba(40,75,99,1) 0%, rgba(60,110,113,1) 100%) fixed;
+    background: linear-gradient(180deg, rgba(0,21,36,1) 0%, rgba(21,97,109,1) 100%) fixed;
     font-size: 20px;
-    color: #ffffff;
+    color: #ffecd1;
     margin: auto;
     font-family: 'Koh Santepheap', cursive;
 }
@@ -44,7 +44,16 @@ h1 {
 #search {
     font-size: 20px;
     padding: 10px 20px;
-    border-radius: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff7d00;
+    color: #001524;
+}
+
+#search:hover {
+    background-color: #78290f;
+    color: #ffecd1;
+    cursor: pointer;
 }
 
 #city_input {
