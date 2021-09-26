@@ -90,6 +90,10 @@ li {
     text-align: center;
 }
 
+#no_city {
+    display: none;
+}
+
 @media all and (max-width: 700px) {
     #main {
         display: flex;
