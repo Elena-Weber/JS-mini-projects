@@ -31,6 +31,9 @@ body {
 
 h1 {
     text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: #ff7d00;
+    -webkit-text-decoration-line: underline;
 }
 
 #input {
@@ -39,6 +42,7 @@ h1 {
     border-radius: 8px;
     font-size: 20px;
     /* width: 60%; */
+    border: 1px solid #ff7d00;
 }
 
 #search {
