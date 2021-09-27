@@ -1,7 +1,7 @@
 body {
     background-color: black;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    color: white;
+    color: #fff;
 }
 
 .container {
@@ -40,6 +40,18 @@ img {
     cursor: pointer;
     font-size: 35px;
     padding: 17px;
+}
+
+.btn:hover {
+    color: black;
+    background-image: linear-gradient(90deg, #FFF 0%, #adb5bd 49%, #ced4da 80%, #FFF 100%);
+    animation:slide 3s linear infinite;
+}
+
+@keyframes slide {
+    to {
+        background-position:20vw;
+    }
 }
 
 #answers {
