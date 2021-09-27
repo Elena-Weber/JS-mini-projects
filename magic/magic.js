@@ -1,5 +1,7 @@
 const btn = document.querySelector(".btn");
 const answers = document.querySelector("#answers");
+const newQ = document.querySelector(".new");
+const ball = document.querySelector(".image");
 
 const options = ["It is certain.",
 "Reply hazy, try again.",
@@ -32,12 +34,18 @@ btn.addEventListener("click", () => {
 
 // add shaking to picture
 btn.addEventListener("mouseover", () => {
-    let ball = document.querySelector(".image");
     ball.classList.add('shaking');
 })
 
 // remove shaking from picture
 btn.addEventListener("mouseout", () => {
-    let ball = document.querySelector(".image");
     ball.classList.remove('shaking');
+})
+
+// new game
+newQ.addEventListener("click", () => {
+    ball.classList.remove('shaking');
+    answers.style.display = "none";
+    newQ.style.backgroundColor = "white";
+    newQ.style.color = "black";
 })

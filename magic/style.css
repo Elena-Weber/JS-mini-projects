@@ -29,7 +29,8 @@ img {
 
 img:hover, .shaking {
     animation: shake 0.5s;
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
+    animation-iteration-count: 2;
 }
 
 @keyframes shake {
@@ -62,6 +63,24 @@ img:hover, .shaking {
     cursor: pointer;
     font-size: 35px;
     padding: 17px;
+}
+
+.new {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: black;
+}
+
+.new:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 0 0 5px #fff;
 }
 
 #answers {
@@ -98,6 +117,9 @@ img:hover, .shaking {
     #answers {
         padding: 15px;
         font-size: 30px;
+    }
+    .new {
+        width: 40%;
     }
 }
 
