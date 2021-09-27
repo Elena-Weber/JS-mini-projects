@@ -6,6 +6,12 @@ body {
     font-family: 'Koh Santepheap', cursive;
 }
 
+#back {
+    color: #ffecd1;
+    text-decoration: none;
+    margin: 15px;
+}
+
 #main {
     display: flex;
     justify-content: space-evenly;
