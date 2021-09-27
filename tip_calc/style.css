@@ -4,6 +4,12 @@ body {
     height: 100vh;
 }
 
+#back {
+    color: #f9f9f9;
+    text-decoration: none;
+    margin: 15px;
+}
+
 .tip-calc {
     display: flex;
     justify-content: space-evenly;
@@ -16,11 +22,6 @@ body {
     font-size: 40px;
     text-shadow: 2px 2px 0px #ff6392, 4px 4px 0px #ffe45e;
     letter-spacing: 3px;
-}
-
-.heading:hover {
-    margin: 23px;
-    font-size: 50px;
 }
 
 .par {
