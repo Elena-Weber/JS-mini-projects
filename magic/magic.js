@@ -23,17 +23,20 @@ const options = ["It is certain.",
 "Very doubtful."
 ];
 
+// show predictions from the list above
 btn.addEventListener("click", () => {
     let randomAnswer = options[Math.floor(Math.random() * options.length)];
     answers.textContent = randomAnswer;
     answers.style.display = "block";
 })
 
+// add shaking to picture
 btn.addEventListener("mouseover", () => {
     let ball = document.querySelector(".image");
     ball.classList.add('shaking');
 })
 
+// remove shaking from picture
 btn.addEventListener("mouseout", () => {
     let ball = document.querySelector(".image");
     ball.classList.remove('shaking');

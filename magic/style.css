@@ -4,6 +4,12 @@ body {
     color: #fff;
 }
 
+#back {
+    color: #fff;
+    text-decoration: none;
+    margin: 15px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -12,13 +18,13 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 20px;
 }
 
 img {
     width: 250px;
-    margin: 30px;
+    margin: 40px;
 }
 
 img:hover, .shaking {
