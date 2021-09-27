@@ -7,7 +7,6 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -15,7 +14,6 @@ h1 {
     text-align: center;
     margin-top: 50px;
     padding: 20px;
-    text-shadow: 0 0 3px #fff;
 }
 
 img {
@@ -50,7 +48,6 @@ img:hover, .shaking {
     width: 40%;
     border-color: white;
     color: white;
-    text-shadow: 0 0 3px #fff;
     box-shadow: 0 0 5px #fff;
     border-radius: 10px;
 }
@@ -61,20 +58,13 @@ img:hover, .shaking {
     padding: 17px;
 }
 
-@keyframes slide {
-    to {
-        background-position:20vw;
-    }
-}
-
 #answers {
     display: none;
     background-color: transparent;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 30px;
     font-size: 30px;
-    text-shadow: 0 0 3px #fff;
 }
 
 @media all and (max-width: 800px) {
