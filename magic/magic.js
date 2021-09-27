@@ -28,3 +28,13 @@ btn.addEventListener("click", () => {
     answers.textContent = randomAnswer;
     answers.style.display = "block";
 })
+
+btn.addEventListener("mouseover", () => {
+    let ball = document.querySelector(".image");
+    ball.classList.add('shaking');
+})
+
+btn.addEventListener("mouseout", () => {
+    let ball = document.querySelector(".image");
+    ball.classList.remove('shaking');
+})
