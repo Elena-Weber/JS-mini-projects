@@ -1,5 +1,6 @@
 let result = (event) => {
     event.preventDefault();
+    btn.disabled = true;
     let points = 0;
     if (document.querySelector("#answer1").checked) {
         document.querySelector("#ans1").style.color = "green";

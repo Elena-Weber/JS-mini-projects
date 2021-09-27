@@ -29,8 +29,8 @@ img {
 
 img:hover, .shaking {
     animation: shake 0.5s;
-    /* animation-iteration-count: infinite; */
-    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
+    /* animation-iteration-count: 2; */
 }
 
 @keyframes shake {

@@ -30,6 +30,7 @@ btn.addEventListener("click", () => {
     let randomAnswer = options[Math.floor(Math.random() * options.length)];
     answers.textContent = randomAnswer;
     answers.style.display = "block";
+    btn.disabled = true;
 })
 
 // add shaking to picture
@@ -48,4 +49,5 @@ newQ.addEventListener("click", () => {
     answers.style.display = "none";
     newQ.style.backgroundColor = "white";
     newQ.style.color = "black";
+    btn.disabled = false;
 })
