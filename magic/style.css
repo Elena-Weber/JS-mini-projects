@@ -18,12 +18,12 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 20px;
 }
 
 img {
-    width: 250px;
+    width: 220px;
     margin: 40px;
 }
 
@@ -69,7 +69,7 @@ img:hover, .shaking {
     background-color: transparent;
     text-align: center;
     margin-top: 30px;
-    padding: 30px;
+    padding: 20px;
     font-size: 30px;
 }
 
