@@ -3,6 +3,12 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+#back {
+    color: #9381ff;
+    text-decoration: none;
+    margin: 15px;
+}
+
 .pre {
     text-align: center;
 }
