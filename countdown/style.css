@@ -5,6 +5,12 @@ body {
     background-color: #221F1C;
 }
 
+#back {
+    color: #FF4848;
+    text-decoration: none;
+    margin: 15px;
+}
+
 .main {
     display: flex;
     flex-wrap: wrap;
