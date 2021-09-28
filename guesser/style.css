@@ -8,6 +8,12 @@ body {
     font-family: 'Tenali Ramakrishna', sans-serif;
 }
 
+#back {
+    color: #bde0fe;
+    text-decoration: none;
+    margin: 15px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
