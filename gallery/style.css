@@ -3,6 +3,12 @@ body {
     color: #2A2A33;
 }
 
+#back {
+    color: #0D4599;
+    text-decoration: none;
+    margin: 15px;
+}
+
 .heading {
     text-align: center;
     background-color: #F2FAFF;

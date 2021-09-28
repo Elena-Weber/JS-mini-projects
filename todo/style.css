@@ -6,6 +6,12 @@ body {
     min-height: 100vh;
 }
 
+#back {
+    color: #ffe8d6;
+    text-decoration: none;
+    margin: 15px;
+}
+
 .main {
     display: flex;
     justify-content: space-evenly;

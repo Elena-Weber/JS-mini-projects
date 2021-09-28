@@ -9,6 +9,12 @@ body {
     color: #4C4C6D;
 }
 
+#back {
+    color: #4C4C6D;
+    text-decoration: none;
+    margin: 15px;
+}
+
 .main {
     display: flex;
     justify-content: space-between;

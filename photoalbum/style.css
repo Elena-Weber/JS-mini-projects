@@ -3,6 +3,12 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+#back {
+    color: #1EAE98;
+    text-decoration: none;
+    margin: 15px;
+}
+
 #heading {
     text-align: center;
     color: #233E8B;

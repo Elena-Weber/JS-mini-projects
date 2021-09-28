@@ -2,6 +2,12 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+#back {
+    color: #555;
+    text-decoration: none;
+    margin: 15px;
+}
+
 .heading {
     text-align: center;
     color: #2c2c2c;
