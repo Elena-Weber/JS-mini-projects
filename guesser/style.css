@@ -54,16 +54,11 @@ body {
     border: solid 1px #00296b;
 }
 
-.newGame:hover {
-    cursor: pointer;
-    border: solid 1px #bde0fe;
-}
-
 .heading {
     background-color: #bde0fe;
     border-radius: 10px;
-    padding: 1px 35px;
-    margin-top: 50px;
+    padding: 1px 25px;
+    margin-top: 30px;
 }
 
 h1 {
@@ -85,6 +80,11 @@ h2 {
     color: white;
 }
 
+.newGame:hover {
+    cursor: pointer;
+    border: solid 1px #bde0fe;
+}
+
 @media all and (max-width: 800px) {
     .inputData {
         padding: 10px 15px;
@@ -102,5 +102,8 @@ h2 {
     h1 {
         font-size: 30px;
         text-align: center;
+    }
+    h2 {
+        font-size: 20px;
     }
 }
