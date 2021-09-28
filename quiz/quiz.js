@@ -1,6 +1,8 @@
 let result = (event) => {
     event.preventDefault();
+    // disable the button
     btn.disabled = true;
+    // calculate the points if proper radio buttons are checked
     let points = 0;
     if (document.querySelector("#answer1").checked) {
         document.querySelector("#ans1").style.color = "green";
@@ -102,7 +104,7 @@ let result = (event) => {
         document.querySelector("#ans25").style.color = "green";
         points ++;
     }
-
+// calculating the level based on the number of points
     let level = '';
     if (points <= 5) {
         level = "Beginner";
@@ -117,7 +119,7 @@ let result = (event) => {
     } else {
         level = "Advanced";
     }
-
+// display the results
     document.querySelector("#result-section").style.display = "block";
     document.querySelector("#point").textContent = points;
     document.querySelector("#level").textContent = level;
