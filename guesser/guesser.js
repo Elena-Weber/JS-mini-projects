@@ -23,30 +23,34 @@ btn.addEventListener("click", play);
 input.addEventListener("keypress", (event) => {
     if (event.keyCode === 13) {
         play();
-        document.querySelector(".inputData").value = "";
+        input.value = "";
     }
 })
 
 // what to do depending on the input
 function play () {
-    const userNum = document.querySelector(".inputData").value;
+    const userNum = input.value;
     if (userNum < 1 || userNum > 30) {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Your number must be between 1 and 30. Try again or start a new game.'
-        })
+        });
+        input.value = "";
     } else if (isNaN(userNum)) {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Is this a number? Are you sure? Try again!'
-        })
+        });
+        input.value = "";
     } else {
         if (userNum < compNum) {
-            Swal.fire('Too low. Try a higher number.')
+            Swal.fire('Too low. Try a higher number.');
+            input.value = "";
         } else if (userNum > compNum) {
-            Swal.fire('Too high. Try a lower number.')
+            Swal.fire('Too high. Try a lower number.');
+            input.value = "";
         } else {
             Swal.fire({
                 title: 'Yay! Number ' + userNum + ' is correct.',
