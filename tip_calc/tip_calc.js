@@ -3,12 +3,13 @@ reset.addEventListener("click", () => {
     location.reload();
 });
 
+// second container, calculating the tip
 let calculate = (event) => {
     event.preventDefault();
     const bill = document.querySelector("#bill").value;
     const people = document.querySelector("#people").value;
     const tip = document.querySelector("#tip").value;
-
+// validating the input
     if (people <= 0 || bill <= 0) {
         Swal.fire({
             icon: 'error',
@@ -16,7 +17,6 @@ let calculate = (event) => {
             text: 'Please, enter numbers greater than 0 into both the input fields.',
         })
     }
-
     if (isNaN(bill) || isNaN(people)) {
         Swal.fire({
             icon: 'error',
@@ -24,7 +24,6 @@ let calculate = (event) => {
             text: 'Please, enter numbers greater than 0 into both the input fields.',
         })
     }
-
     if (bill === "" || people === "") {
         Swal.fire({
             icon: 'error',
@@ -32,15 +31,15 @@ let calculate = (event) => {
             text: 'Please, enter numbers greater than 0 into both the input fields.',
         })
     }
-
+// calculations themselves
     let billPerPerson = bill/people;
     let tipPerPerson = (bill * tip) / people;
     let totalPerPerson = billPerPerson + tipPerPerson;
-
+// rounding up result
     document.querySelector("#billPerPerson").textContent = billPerPerson.toFixed(2);
     document.querySelector("#tipPerPerson").textContent = tipPerPerson.toFixed(2);
     document.querySelector("#totalPerPerson").textContent = totalPerPerson.toFixed(2);
-
+// what to do in case of zero
     if (isNaN(billPerPerson) || people === "0") {
         document.querySelector("#billPerPerson").textContent = "";
     }
@@ -55,6 +54,7 @@ let calculate = (event) => {
 const btn = document.querySelector("#calc");
 btn.addEventListener("click", calculate);
 
+// display tip options section
 let tipOptions = (event) => {
     event.preventDefault();
     const tip = document.querySelector("#tip");
@@ -64,6 +64,7 @@ let tipOptions = (event) => {
 const addTip = document.querySelector("#add_tip");
 addTip.addEventListener("click", tipOptions);
 
+// display section to rate service
 const checkbox = document.querySelector("#checkbox");
 const checkedBox = document.querySelector("#checkedBox");
 checkbox.addEventListener("click", () => {
@@ -74,12 +75,14 @@ checkbox.addEventListener("click", () => {
     }
 })
 
+// removing rating options section
 const refuse = document.querySelector("#refuse");
 refuse.addEventListener("click", () => {
     checkedBox.style.display = "none";
     checkbox.checked = false;
 })
 
+// adding points depending on what is checked
 const result = document.querySelector("#result");
 result.addEventListener("click", (event) => {
     event.preventDefault();
@@ -164,6 +167,7 @@ result.addEventListener("click", (event) => {
         points += 5;
     }
 
+    // displaying recommended tip based on the number of points
     let tip = '';
     if (points === 0) {
         tip = 0;
@@ -181,6 +185,7 @@ result.addEventListener("click", (event) => {
         tip = "30% and higher";
     }
 
+    // display proposed tip
     document.querySelector("#proposed-tip").style.display = "block";
     document.querySelector("#proposed").textContent = tip;
 })
