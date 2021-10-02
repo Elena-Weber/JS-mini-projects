@@ -25,7 +25,7 @@ const options = ["It is certain.",
 "Very doubtful."
 ];
 
-// show predictions from the list above
+// display predictions from the list above
 btn.addEventListener("click", () => {
     let randomAnswer = options[Math.floor(Math.random() * options.length)];
     answers.textContent = randomAnswer;
