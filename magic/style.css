@@ -22,15 +22,18 @@ h1 {
     padding: 20px;
 }
 
-img {
+.image {
     width: 220px;
     margin: 40px;
 }
 
-img:hover, .shaking {
+.shaking {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
-    /* animation-iteration-count: 2; */
+}
+
+.image:hover {
+    animation: none;
 }
 
 @keyframes shake {

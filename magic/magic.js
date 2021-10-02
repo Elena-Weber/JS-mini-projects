@@ -30,24 +30,13 @@ btn.addEventListener("click", () => {
     let randomAnswer = options[Math.floor(Math.random() * options.length)];
     answers.textContent = randomAnswer;
     answers.style.display = "block";
-    btn.disabled = true;
+    btn.disabled = true; // disable clicking the button again
+    ball.classList.remove('shaking'); // remove shaking from the ball
 })
 
-// add shaking to picture
-btn.addEventListener("mouseover", () => {
-    ball.classList.add('shaking');
-})
-
-// remove shaking from picture
-btn.addEventListener("mouseout", () => {
-    ball.classList.remove('shaking');
-})
-
-// new game
+// start a new game
 newQ.addEventListener("click", () => {
-    ball.classList.remove('shaking');
-    answers.style.display = "none";
-    newQ.style.backgroundColor = "white";
-    newQ.style.color = "black";
-    btn.disabled = false;
+    ball.classList.add('shaking'); //add shaking to the ball
+    answers.style.display = "none"; // remove answer
+    btn.disabled = false; // enable button again
 })
