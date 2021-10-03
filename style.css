@@ -38,19 +38,14 @@ body {
     height: 170px;
     border: 1px solid white;
     text-align: center;
-    /* align-items: center; */
-    /* justify-content: center; */
     padding: 10px;
     margin: 10px;
     transition: 0.4s;
     border-radius: 15px;
-    color: white;
 }
 
 .project:hover {
     transform: scale(0.9, 0.9);
-    /* background-color: black;
-    opacity: 0.5; */
 }
 
 button {
@@ -61,22 +56,13 @@ button {
     font-size: 20px;
     background-color: transparent;
     border: 1px solid white;
-    /* color: white; */
 }
-
-/* button:hover { */
-    /* background-color: white;
-    opacity: 0.5; */
-    /* color: black; */
-/* } */
 
 a {
     text-decoration: none;
     color: white;
 }
 
-/* a:hover { */
-    /* color: black; */
-
-/* } */
-
+h2 {
+    margin-top: 0;
+}
