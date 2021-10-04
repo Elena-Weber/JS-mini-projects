@@ -24,6 +24,7 @@ body {
 #link {
     text-decoration: none;
 }
+
 .perfumes {
     display: flex;
     flex-wrap: wrap;
