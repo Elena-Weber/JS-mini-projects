@@ -79,6 +79,10 @@ a {
     text-align: center;
 }
 
+#not_found {
+    display: none;
+}
+
 @media all and (max-width: 800px) {
     .search-div {
         flex-direction: column;
