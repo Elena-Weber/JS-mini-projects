@@ -48,10 +48,10 @@ body {
 border: solid 0.5px #ccc;
 }
 
-#search, #brand {
+#search {
     padding: 10px;
     margin: 10px;
-    width: 45%;
+    width: 90%;
     font-size: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -62,7 +62,7 @@ border: solid 0.5px #ccc;
     caret-color: #555;
 }
 
-#search:focus, #brand:focus {
+#search:focus {
     border: 1px solid #555;
 }
 
