@@ -2,4 +2,4 @@ This is a one-page front-end JavaScript simulation of a well-known Magic 8-Ball 
 
 Here is a separate link to the deployed app:
 
-https://coal-alabaster-barberry.glitch.me
+https://trusting-edison-b2955d.netlify.app/magic/magic.html

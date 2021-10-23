@@ -2,4 +2,4 @@ This is a one-page front-end JavaScript multiple-choice test the goal of which i
 
 Here is a separate link to the deployed app:
 
-https://lovely-stone-chasmosaurus.glitch.me/
+https://trusting-edison-b2955d.netlify.app/quiz/quiz.html
