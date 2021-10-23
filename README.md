@@ -1,7 +1,10 @@
 This project is a collection of mini JavaScript projects in which I extend my knowledge of the subject (frontend only).
 
+The deployed ap is here:
+https://trusting-edison-b2955d.netlify.app/index.html
+
 Here is how it works:
-When you ope up the index page, you'll see several buttons each of which will lead you to a separate project. Feel free to browse through all of them and check them out.
+When you open up the index page, you'll see several buttons each of which will lead you to a separate project. Feel free to browse through all of them and check them out.
 
 Installation
 Fork the project from https://github.com/Elena-Weber/JS-mini-projects and go to this page in your browser:
