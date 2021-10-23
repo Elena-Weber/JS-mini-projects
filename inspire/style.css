@@ -1,0 +1,19 @@
+.main {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
+/* .container {
+    background-color: cadetblue;
+    justify-content: center;
+    align-items: center;
+} */
+
+#footer {
+    bottom: 0%;
+    position: fixed;
+    margin: 20px;
+}
