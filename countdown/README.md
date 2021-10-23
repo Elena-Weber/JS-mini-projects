@@ -2,4 +2,4 @@ This is a one-page front-end JavaScript Application including 2 countdowns (till
 
 Here is a separate link to the deployed app:
 
-https://polyester-working-sulfur.glitch.me/
+https://trusting-edison-b2955d.netlify.app/countdown/countdown.html

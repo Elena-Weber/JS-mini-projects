@@ -2,4 +2,4 @@ This is a one-page front-end JavaScript Game the goal of which is to guess the n
 
 Here is a separate link to the deployed app:
 
-https://branch-leather-medicine.glitch.me/
+https://trusting-edison-b2955d.netlify.app/guesser/guesser.html
