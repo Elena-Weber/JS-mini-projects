@@ -17,3 +17,14 @@
     position: fixed;
     margin: 20px;
 }
+
+#btn {
+    font-size: 20px;
+    padding: 20px 40px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+#quote, #author {
+    padding: 20px 50px;
+}
