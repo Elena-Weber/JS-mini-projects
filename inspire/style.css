@@ -4,6 +4,7 @@ body {
     background-size: cover;
     text-align: center;
     color: #222831;
+    font-family: 'Ubuntu', sans-serif;
     min-height: 100vh;
 }
 
