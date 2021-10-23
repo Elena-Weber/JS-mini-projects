@@ -4,9 +4,8 @@ body {
     background-size: cover;
     text-align: center;
     color: #222831;
-    /* min-height: 100vh; */
+    min-height: 100vh;
 }
-
 
 .main {
     text-align: center;
@@ -17,7 +16,7 @@ body {
 }
 
 #heading {
-    margin-top: 90px;
+    margin-top: 80px;
     margin-bottom: 30px;
     font-size: 40px;
 }
@@ -26,17 +25,10 @@ body {
     font-size: 25px;
 }
 
-#footer {
-    bottom: 0%;
-    position: fixed;
-    margin: 20px;
-    color: #ECE2E1;
-}
-
 #btn {
     font-size: 20px;
     padding: 20px 40px;
-    margin: 50px;
+    margin: 40px;
     border-radius: 15px;
     border: 1px solid #222831;
     background-color: #D3E0DC;
@@ -59,6 +51,55 @@ body {
     font-size: 40px;
 }
 
-a {
-    color: #ECE2E1;
+@media all and (max-width: 600px) {
+    #quote {
+        font-size: 30px;
+    }
+    #btn {
+        padding: 20px 40px;
+        margin: 10px;
+    }
+    #quote, #author {
+        padding: 5px 10px;
+        margin: 5px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #heading {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    #subheading {
+        font-size: 20px;
+    }
+    /* #btn {
+        padding: 20px 40px;
+        margin: 10px;
+    }
+    #quote, #author {
+        padding: 5px 10px;
+        margin: 5px;
+    } */
+    #quote {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    #heading {
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    #btn {
+        padding: 10px 30px;
+        margin: 0;
+    }
+    #quote, #author {
+        padding: 5px 10px;
+        margin: 0;
+        font-size: 15px;
+    }
 }
