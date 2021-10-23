@@ -28,11 +28,17 @@ async function getQuote() {
         const resp = await fetched.json()
         console.log(resp)
         let chosenQuote = Math.round(Math.random() * resp.length)
-        console.log(resp.length)
-        console.log(resp[chosenQuote])
+        // console.log(resp.length)
+        // console.log(resp[chosenQuote].text)
+        // console.log(resp[chosenQuote].author)
+        let quoteAuthor = resp[chosenQuote].author
+        if (quoteAuthor === null) {
+            quoteAuthor = "unknown"
+        }
         // console.log(resp[0].a)
         // console.log(resp[0].q)
-        // quote.innerHTML = resp[0].q
+        quote.innerHTML = resp[chosenQuote].text
+        author.innerHTML = "Source: " + quoteAuthor
     // }
 
     
