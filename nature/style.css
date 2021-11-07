@@ -1,0 +1,29 @@
+h1 {
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 200px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#videoplayer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -10;
+}
