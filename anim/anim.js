@@ -1,0 +1,1 @@
+gsap.to(".header", {y: 20, ease: "bounce", duration: 2})

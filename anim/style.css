@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: cornflowerblue;
+    height: 12vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+a {
+    color: cornsilk;
+    text-decoration: none;
+}
