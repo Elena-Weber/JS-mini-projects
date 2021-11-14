@@ -4,7 +4,7 @@ body {
 
 .header {
     background-color: cornflowerblue;
-    height: 12vh;
+    height: 10vh;
 }
 
 nav {
@@ -17,4 +17,5 @@ nav {
 a {
     color: cornsilk;
     text-decoration: none;
+    letter-spacing: 2px;
 }
