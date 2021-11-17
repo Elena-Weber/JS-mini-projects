@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+.container {
+    display: flex;
+}
+
 .header {
     background-color: cornflowerblue;
     height: 10vh;
@@ -21,41 +25,32 @@ a {
 }
 
 .squares {
-margin-top: 30px;
-}
-
-#first {
-    width: 100px;
-    height: 100px;
-    background-color: crimson;
-    opacity: 0;
-    text-align: center;
+    margin-top: 30px;
 }
 
 h3 {
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
-#second {
+.square {
     width: 100px;
-    height: 100px;
+    height: 80px;
+    opacity: 0;
+    text-align: center;
+}
+
+.first {
+    background-color: crimson;
+}
+
+.second {
     background-color: darkgoldenrod;
-    opacity: 0;
-    text-align: center;
 }
 
-#third {
-    width: 100px;
-    height: 100px;
+.third {
     background-color: darkcyan;
-    opacity: 0;
-    text-align: center;
 }
 
-#fourth {
-    width: 100px;
-    height: 100px;
+.fourth {
     background-color: darkblue;
-    opacity: 0;
-    text-align: center;
 }
