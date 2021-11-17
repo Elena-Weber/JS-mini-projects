@@ -19,3 +19,43 @@ a {
     text-decoration: none;
     letter-spacing: 2px;
 }
+
+.squares {
+margin-top: 30px;
+}
+
+#first {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    opacity: 0;
+    text-align: center;
+}
+
+h3 {
+    padding-top: 30px;
+}
+
+#second {
+    width: 100px;
+    height: 100px;
+    background-color: darkgoldenrod;
+    opacity: 0;
+    text-align: center;
+}
+
+#third {
+    width: 100px;
+    height: 100px;
+    background-color: darkcyan;
+    opacity: 0;
+    text-align: center;
+}
+
+#fourth {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    opacity: 0;
+    text-align: center;
+}
