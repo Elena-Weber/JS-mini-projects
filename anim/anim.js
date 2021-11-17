@@ -12,3 +12,6 @@ gsap.to(".fourth", {x: 475, duration: 3, delay: 3, ease: "power4", opacity: 1})
 
 gsap.from(".question", {opacity: 0, delay: 4})
 gsap.to(".question", {y: 200, duration: 3, ease: "power1", opacity: 1, delay: 4})
+
+gsap.from(".btn", {opacity: 0, delay: 4.5})
+gsap.to(".btn", {x: 70, y: 200, duration: 3, ease: "power1", opacity: 1, delay: 4.5})
