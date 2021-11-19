@@ -45,6 +45,7 @@ h3 {
 .question {
     color: #012a4a;
     font-size: 40px;
+    opacity: 0;
 }
 
 .btn {
