@@ -57,4 +57,11 @@ h3 {
 
 .question {
     color: darkmagenta;
+    font-size: 40px;
+}
+
+.btn {
+    font-size: 30px;
+    padding: 20px 40px;
+    border-radius: 10px;
 }
