@@ -18,23 +18,23 @@ nav {
     height: 100%;
 }
 
-a {
+h2 {
     color: cornsilk;
-    text-decoration: none;
     letter-spacing: 2px;
 }
 
 .squares {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 h3 {
-    padding-top: 40px;
+    padding-top: 50px;
+    font-size: 25px;
 }
 
 .square {
-    width: 100px;
-    height: 80px;
+    width: 250px;
+    height: 130px;
     opacity: 0;
     text-align: center;
 }
@@ -53,4 +53,8 @@ h3 {
 
 .fourth {
     background-color: darkblue;
+}
+
+.question {
+    color: darkmagenta;
 }
