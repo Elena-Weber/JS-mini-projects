@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background: #F8F3D4;
 }
 
 .container {
@@ -7,7 +8,7 @@ body {
 }
 
 .header {
-    background-color: cornflowerblue;
+    background-color: #F6416C;
     height: 10vh;
 }
 
@@ -19,8 +20,8 @@ nav {
 }
 
 h2 {
-    color: cornsilk;
-    letter-spacing: 2px;
+    color: #FFFFFF;
+    letter-spacing: 5px;
 }
 
 .squares {
@@ -37,26 +38,12 @@ h3 {
     height: 130px;
     opacity: 0;
     text-align: center;
-}
-
-.first {
-    background-color: crimson;
-}
-
-.second {
-    background-color: darkgoldenrod;
-}
-
-.third {
-    background-color: darkcyan;
-}
-
-.fourth {
-    background-color: darkblue;
+    background: #FFDE7D;
+    box-shadow: 10px 10px 10px #F6416C;
 }
 
 .question {
-    color: darkmagenta;
+    color: #012a4a;
     font-size: 40px;
 }
 
@@ -64,4 +51,11 @@ h3 {
     font-size: 30px;
     padding: 20px 40px;
     border-radius: 10px;
+    border: none;
+    background: #00B8A9;
+    box-shadow: 10px 10px 10px #F6416C;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
