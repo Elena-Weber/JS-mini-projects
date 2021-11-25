@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background: #F8F3D4;
+    color: #012a4a;
+    /* background: #F8F3D4; */
 }
 
 .container {
@@ -8,8 +9,15 @@ body {
 }
 
 .header {
-    background-color: #F6416C;
-    height: 10vh;
+    border: #118ab2 solid 2px;
+    border-radius: 10px;
+    height: 15vh;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.header:hover {
+    background-color: #118ab2;
 }
 
 nav {
@@ -20,8 +28,12 @@ nav {
 }
 
 h2 {
-    color: #FFFFFF;
     letter-spacing: 5px;
+}
+
+h2:hover {
+    color: white;
+    cursor: default;
 }
 
 .squares {
@@ -29,7 +41,7 @@ h2 {
 }
 
 h3 {
-    padding-top: 50px;
+    padding-top: 27px;
     font-size: 25px;
 }
 
@@ -38,12 +50,17 @@ h3 {
     height: 130px;
     opacity: 0;
     text-align: center;
-    background: #FFDE7D;
-    box-shadow: 10px 10px 10px #F6416C;
+    border: 3px solid #ffd166;
+    margin: 30px;
+    /* box-shadow: 10px 10px 10px #F6416C; */
+}
+
+.square:hover {
+    background: #ffd166;
+    cursor: default;
 }
 
 .question {
-    color: #012a4a;
     font-size: 40px;
     opacity: 0;
 }
@@ -52,20 +69,28 @@ h3 {
     font-size: 30px;
     padding: 20px 40px;
     border-radius: 10px;
-    border: none;
-    background: #00B8A9;
-    box-shadow: 10px 10px 10px #F6416C;
+    background: #06d6a0;
+    border: #06d6a0 solid 3px;
+    /* box-shadow: 10px 10px 10px #F6416C; */
 }
 
 .no-btn {
     font-size: 30px;
     padding: 20px 40px;
     border-radius: 10px;
-    border: none;
-    background: #00B8A9;
-    box-shadow: 10px 10px 10px #F6416C;
+    background: #ef476f;
+    border: #ef476f solid 3px;
+    /* box-shadow: 10px 10px 10px #F6416C; */
 }
 
-.yes-btn:hover, .no-btn:hover {
+.yes-btn:hover {
     cursor: pointer;
+    background: white;
+    color: #06d6a0;
+}
+
+.no-btn:hover {
+    cursor: pointer;
+    background: white;
+    color: #ef476f;
 }
