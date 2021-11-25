@@ -52,7 +52,8 @@ h3 {
     text-align: center;
     border: 3px solid #ffd166;
     margin: 30px;
-    /* box-shadow: 10px 10px 10px #F6416C; */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #118ab2;
 }
 
 .square:hover {
@@ -65,22 +66,24 @@ h3 {
     opacity: 0;
 }
 
+.question:hover {
+    color: #012a4a;
+}
+
 .yes-btn {
     font-size: 30px;
     padding: 20px 40px;
     border-radius: 10px;
     background: #06d6a0;
     border: #06d6a0 solid 3px;
-    /* box-shadow: 10px 10px 10px #F6416C; */
 }
 
 .no-btn {
     font-size: 30px;
-    padding: 20px 40px;
+    padding: 20px 45px;
     border-radius: 10px;
     background: #ef476f;
     border: #ef476f solid 3px;
-    /* box-shadow: 10px 10px 10px #F6416C; */
 }
 
 .yes-btn:hover {
@@ -90,7 +93,8 @@ h3 {
 }
 
 .no-btn:hover {
-    cursor: pointer;
     background: white;
-    color: #ef476f;
+    font-size: 0;
+    padding: 0;
+    border: none;
 }
