@@ -13,5 +13,8 @@ gsap.to(".fourth", {x: 250, duration: 3, delay: 6, ease: "power4", opacity: 1})
 gsap.from(".question", {x: 1000, y: 200, delay: 7})
 gsap.to(".question", {x: 600, y: 200, duration: 3, ease: "power1", opacity: 1, delay: 7})
 
-gsap.from(".btn", {x: 640, y: 1000, opacity: 0, delay: 8})
-gsap.to(".btn", {x: 640, y: 250, duration: 3, ease: "power1", opacity: 1, delay: 8})
+gsap.from(".yes-btn", {x: 640, y: 1000, opacity: 0, delay: 8})
+gsap.to(".yes-btn", {x: 640, y: 250, duration: 3, ease: "power1", opacity: 1, delay: 8})
+
+gsap.from(".no-btn", {x: 740, y: 1000, opacity: 0, delay: 8})
+gsap.to(".no-btn", {x: 740, y: 250, duration: 3, ease: "power1", opacity: 1, delay: 8})
