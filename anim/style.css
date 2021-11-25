@@ -1,7 +1,7 @@
 body {
     margin: 0;
     color: #012a4a;
-    /* background: #F8F3D4; */
+    /* background: #e3f2fd; */
 }
 
 .container {
@@ -41,13 +41,13 @@ h2:hover {
 }
 
 h3 {
-    padding-top: 27px;
+    padding-top: 20px;
     font-size: 25px;
 }
 
 .square {
-    width: 250px;
-    height: 130px;
+    width: 220px;
+    height: 110px;
     opacity: 0;
     text-align: center;
     border: 3px solid #ffd166;
@@ -93,8 +93,9 @@ h3 {
 }
 
 .no-btn:hover {
-    background: white;
-    font-size: 0;
+    background: #06d6a0;
+    /* font-size: 0px;
     padding: 0;
     border: none;
+    color: white; */
 }
