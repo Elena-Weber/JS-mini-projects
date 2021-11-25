@@ -93,9 +93,9 @@ h3 {
 }
 
 .no-btn:hover {
-    background: #06d6a0;
-    /* font-size: 0px;
-    padding: 0;
-    border: none;
-    color: white; */
+    cursor: pointer;
+    background: white;
+    color: #06d6a0;
+    border: #06d6a0 solid 3px;
+    padding: 20px 40px;
 }
