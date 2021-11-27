@@ -31,3 +31,16 @@ let smile = document.querySelector("#smile")
 const rotate = gsap.to(smile, {rotation: 360})
 smile.addEventListener("mouseenter", () => rotate.play())
 smile.addEventListener("mouseleave", () => rotate.reverse())
+
+let que = document.querySelector(".question")
+let yes_btn = document.querySelector(".yes-btn")
+no_btn.addEventListener("click", () => {
+    que.textContent = "THEN DO IT!"
+    no_btn.style.opacity = 0
+    yes_btn.style.opacity = 0
+})
+yes_btn.addEventListener("click", () => {
+    que.textContent = "THEN DO IT!"
+    yes_btn.style.opacity = 0
+    no_btn.style.opacity = 0
+})
