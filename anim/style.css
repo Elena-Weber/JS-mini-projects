@@ -67,6 +67,14 @@ h3 {
     cursor: default;
 }
 
+#smile {
+    opacity: 0;
+}
+
+/* #smile:hover {
+    
+} */
+
 .question {
     font-size: 40px;
     opacity: 0;
