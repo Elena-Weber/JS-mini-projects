@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    color: #012a4a;
-    /* background: #e3f2fd; */
+    color: #227c9d;
+    background: #fef9ef;
 }
 
 .container {
@@ -9,15 +9,19 @@ body {
 }
 
 .header {
-    border: #118ab2 solid 2px;
+    border: #227c9d solid 2px;
+    background-color: #227c9d;
+    color: #fef9ef;
     border-radius: 10px;
     height: 15vh;
     margin: 0 20px;
     font-size: 20px;
+    box-shadow: 5px 5px 10px #adb5bd;
 }
 
 .header:hover {
-    background-color: #118ab2;
+    background-color: #fef9ef;
+    color: #227c9d;
 }
 
 nav {
@@ -32,7 +36,7 @@ h2 {
 }
 
 h2:hover {
-    color: white;
+    /* color: #fef9ef; */
     cursor: default;
 }
 
@@ -50,52 +54,59 @@ h3 {
     height: 110px;
     opacity: 0;
     text-align: center;
-    border: 3px solid #ffd166;
+    border: 3px solid #ffcb77;
+    background-color: #ffcb77;
+    color: #012a4a;
     margin: 30px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px #118ab2;
+    box-shadow: 5px 5px 10px #adb5bd;
 }
 
 .square:hover {
-    background: #ffd166;
+    background: #fef9ef;
     cursor: default;
 }
 
 .question {
     font-size: 40px;
     opacity: 0;
+    color: #012a4a;
 }
 
 .question:hover {
-    color: #012a4a;
+    color: #227c9d;
 }
 
 .yes-btn {
     font-size: 30px;
     padding: 20px 40px;
     border-radius: 10px;
-    background: #06d6a0;
-    border: #06d6a0 solid 3px;
+    background: #17c3b2;
+    border: #17c3b2 solid 3px;
+    color: #fef9ef;
+    box-shadow: 5px 5px 10px #adb5bd;
 }
 
 .no-btn {
     font-size: 30px;
     padding: 20px 45px;
     border-radius: 10px;
-    background: #ef476f;
-    border: #ef476f solid 3px;
+    background: #fe6d73;
+    border: #fe6d73 solid 3px;
+    color: #fef9ef;
+    box-shadow: 5px 5px 10px #adb5bd;
 }
 
 .yes-btn:hover {
     cursor: pointer;
-    background: white;
-    color: #06d6a0;
+    background: #fef9ef;
+    color: #17c3b2;
 }
 
 .no-btn:hover {
     cursor: pointer;
-    background: white;
-    color: #06d6a0;
-    border: #06d6a0 solid 3px;
+    background: #fef9ef;
+    color: #17c3b2;
+    border: #17c3b2 solid 3px;
     padding: 20px 40px;
 }
