@@ -67,7 +67,7 @@ h3 {
     cursor: default;
 }
 
-#smile {
+#thumb, #smile {
     opacity: 0;
 }
 
