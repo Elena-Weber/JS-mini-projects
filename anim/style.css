@@ -2,6 +2,7 @@ body {
     margin: 0;
     color: #227c9d;
     background: #fef9ef;
+    font-family: 'Mukta', sans-serif;
 }
 
 #back {
@@ -47,7 +48,6 @@ h2 {
 }
 
 h2:hover {
-    /* color: #fef9ef; */
     cursor: default;
 }
 
@@ -56,7 +56,7 @@ h2:hover {
 }
 
 h3 {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 25px;
 }
 
