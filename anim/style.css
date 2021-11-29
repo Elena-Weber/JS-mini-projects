@@ -5,9 +5,14 @@ body {
 }
 
 #back {
-    color: #17c3b2;
+    color: #fe6d73;
     text-decoration: none;
     margin: 15px;
+}
+
+.note {
+    margin: 15px 0 0 15px;
+    color: #17c3b2;
 }
 
 .container {
@@ -47,7 +52,7 @@ h2:hover {
 }
 
 .squares {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 h3 {
@@ -76,10 +81,6 @@ h3 {
 #thumb, #smile {
     opacity: 0;
 }
-
-/* #smile:hover {
-    
-} */
 
 .question {
     font-size: 40px;
