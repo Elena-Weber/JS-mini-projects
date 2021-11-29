@@ -12,7 +12,7 @@ body {
 }
 
 .note {
-    margin: 15px 0 0 15px;
+    margin: 0 0 0 10px;
     color: #17c3b2;
 }
 
@@ -25,7 +25,7 @@ body {
     background-color: #227c9d;
     color: #fef9ef;
     border-radius: 10px;
-    height: 15vh;
+    height: 10vh;
     margin: 0 20px;
     font-size: 20px;
     box-shadow: 5px 5px 10px #adb5bd;
