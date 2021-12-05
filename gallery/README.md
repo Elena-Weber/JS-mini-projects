@@ -1,0 +1,1 @@
+This is a one-page front-end JavaScript house listing with some JS animations (not responsive).
