@@ -34,6 +34,17 @@ body {
     font-size: 20px;
 }
 
+del {
+    display: inline-block;
+    transform: rotate(-10deg);
+}
+
+ins {
+    color: red;
+    font-size: larger;
+    text-decoration: none;
+}
+
 .rooms {
     display: flex;
 }
