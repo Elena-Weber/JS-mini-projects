@@ -7,9 +7,10 @@ body {
 }
 
 #back {
-    color: #ffe8d6;
+    color: #ffffff;
     text-decoration: none;
     margin: 15px;
+    text-shadow: 1px 1px #365a44;
 }
 
 .main {
@@ -30,8 +31,9 @@ body {
 }
 
 h3 {
-    color: #ffe8d6;
+    color: #ffffff;
     text-align: center;
+    text-shadow: 1px 1px #365a44;
 }
 
 .inputField {
@@ -69,7 +71,7 @@ h3 {
 
 .another-btn {
     padding: 20px;
-    background: linear-gradient(168deg, #2c955c 0%, #ffffff 50%, #2c955c 100%);
+    background: linear-gradient(135deg, #2c955c 0%, #ffffff 50%, #2c955c 100%);
     border-radius: 10px;
     margin: 5px;
     font-size: 20px;
@@ -78,7 +80,7 @@ h3 {
 
 .another-btn:hover, .another-addedItem:hover {
     cursor: copy;
-    background: linear-gradient(168deg, #ffffff 0%, #2c955c 50%, #ffffff 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #2c955c 50%, #ffffff 100%);
     color: #ffffff;
 }
 
@@ -108,7 +110,7 @@ h3 {
 }
 
 .another-addedItem {
-    background: linear-gradient(168deg, #2c955c 0%, #ffffff 50%, #2c955c 100%);
+    background: linear-gradient(135deg, #2c955c 0%, #ffffff 50%, #2c955c 100%);
     list-style-type: none;
     height: 50px;
     width: 80%;
@@ -118,6 +120,12 @@ h3 {
     border-radius: 10px;
     margin: 5px;
     padding: 30px 0 0 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -133,7 +141,7 @@ li {
 
 .another-strikethrough {
     /* color: #2d6a4f; */
-    background: linear-gradient(168deg, #ffffff 0%, #269353 50%, #ffffff 100%);
+    background: linear-gradient(45deg, #ffffff 0%, #269353 50%, #ffffff 100%);
     color: #ffffff;
     text-decoration: line-through;
     transition: all 2s ease;
