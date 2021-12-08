@@ -56,11 +56,11 @@ h3 {
     background-color: #2c955c;
     margin: 5px;
     font-size: 20px;
-    border: 1px solid #269353;
+    border: 1px solid #365a44;
     color: #ffffff;
 }
 
-.btn:hover {
+.btn:hover, .addedItem:hover {
     cursor: pointer;
     background-color: #365a44;
     /* color: #28282a; */
@@ -76,54 +76,26 @@ h3 {
     border: 1px solid #269353;
 }
 
-.another-btn:hover {
+.another-btn:hover, .another-addedItem:hover {
     cursor: copy;
     background: linear-gradient(168deg, #ffffff 0%, #2c955c 50%, #ffffff 100%);
     color: #ffffff;
 }
 
 .addedItem {
-    background-color: #ffe8d6;
+    background-color: #2c955c;
     height: 50px;
     width: 80%;
     margin: auto;
     font-size: 20px;
-    border: 1px solid #cb997e;
+    border: 1px solid #365a44;
+    color: #ffffff;
     margin: 5px;
     padding: 30px 0 0 0;
-}
-
-.addedItem:hover {
-    cursor: alias;
 }
 
 .planner {
     justify-content: center;
-}
-
-.another-addedItem {
-    background: linear-gradient(168deg, rgba(249,200,174,1) 0%, rgba(255,252,246,1) 50%, rgba(249,200,174,1) 100%);
-    list-style-type: none;
-    height: 50px;
-    width: 80%;
-    text-align: center;
-    color: #7d5a5a;
-    font-size: 20px;
-    border: 1px solid #7d5a5a;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 30px 0 0 0;
-}
-
-.another-addedItem:hover {
-    cursor: pointer;
-}
-
-li {
-    text-align: center;
-}
-
-.planner {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,6 +107,23 @@ li {
     align-items: center;
 }
 
+.another-addedItem {
+    background: linear-gradient(168deg, #2c955c 0%, #ffffff 50%, #2c955c 100%);
+    list-style-type: none;
+    height: 50px;
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #269353;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 30px 0 0 0;
+}
+
+li {
+    text-align: center;
+}
+
 .strikethrough {
     background-color: #b7e4c7;
     color: black;
@@ -143,10 +132,11 @@ li {
 }
 
 .another-strikethrough {
-    color: #2d6a4f;
+    /* color: #2d6a4f; */
+    background: linear-gradient(168deg, #ffffff 0%, #269353 50%, #ffffff 100%);
+    color: #ffffff;
     text-decoration: line-through;
-    text-decoration: line-through double #b7e4c7;
-    transition: all 1s ease;
+    transition: all 2s ease;
 }
 
 @media all and (max-width: 800px) {
