@@ -4,6 +4,7 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    background-color: #6b5f5d;
 }
 
 #back {
@@ -24,7 +25,6 @@ body {
 }
 
 .plans, .shopping {
-    font-size: 60px;
     color: #ffffff;
     -webkit-text-stroke: 1px #269353;
     text-align: center;
@@ -34,6 +34,15 @@ h3 {
     color: #ffffff;
     text-align: center;
     text-shadow: 1px 1px #365a44;
+}
+
+input {
+    outline: none;
+    color: #365a44;
+}
+
+input:focus {
+    border: 2px solid #269353;
 }
 
 .inputField {
@@ -65,7 +74,6 @@ h3 {
 .btn:hover, .addedItem:hover {
     cursor: pointer;
     background-color: #365a44;
-    /* color: #28282a; */
     border: 1px solid #ffffff;
 }
 
@@ -140,7 +148,6 @@ li {
 }
 
 .another-strikethrough {
-    /* color: #2d6a4f; */
     background: linear-gradient(45deg, #ffffff 0%, #269353 50%, #ffffff 100%);
     color: #ffffff;
     text-decoration: line-through;
