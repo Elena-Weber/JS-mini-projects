@@ -20,9 +20,14 @@ label {
     margin-bottom: 5px;
 }
 
+input {
+    margin: 15px;
+}
+
 input[type="text"] {
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 5px;
+    font-size: 25px;
     /* border: none; */
 }
 
@@ -30,4 +35,9 @@ input[type="text"] {
     height: 100px;
     width: 100%;
     background-color: cadetblue;
+}
+
+p {
+    font-size: 20px;
+    margin: 20px;
 }
