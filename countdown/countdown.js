@@ -6,8 +6,7 @@ const msDay = 24 * 60 * 60 * 1000;
 
 // countdown till Xmas
 function countDownX() {
-    const xDate = new Date("December 25, 2021 00:00");
-    // const xDate = new Date("August 24, 2021 12:46");
+    const xDate = new Date("December 25, 2022 00:00");
     const now = new Date();
     const diffX = xDate - now;
 // seconds till Xmas
@@ -35,7 +34,7 @@ function countDownX() {
 
 // countdown till NY
 function countDownNY() {
-    const nyDate = new Date("January 1, 2022 00:00");
+    const nyDate = new Date("January 1, 2023 00:00");
     const now = new Date();
     const diffNY = nyDate - now;
 // seconds till NY
