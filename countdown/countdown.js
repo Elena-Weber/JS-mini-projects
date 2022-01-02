@@ -10,16 +10,16 @@ function countDownX() {
     const now = new Date();
     const diffX = xDate - now;
 // seconds till Xmas
-    const displaySecondsX = Math.floor((diffX%msMinute)/msSec);
+    const displaySecondsX = Math.floor((diffX % msMinute) / msSec);
     document.querySelector(".secondsX").textContent = displaySecondsX;
 // minutes till Xmas
-    const displayMinutesX = Math.floor((diffX%msHour)/msMinute);
+    const displayMinutesX = Math.floor((diffX % msHour) / msMinute);
     document.querySelector(".minutesX").textContent = displayMinutesX;
 // hours till Xmas
-    const displayHoursX = Math.floor((diffX%msDay)/msHour);
+    const displayHoursX = Math.floor((diffX % msDay) / msHour);
     document.querySelector(".hoursX").textContent = displayHoursX;
 // hours till Xmas
-    const displayDaysX = Math.floor(diffX/msDay);
+    const displayDaysX = Math.floor(diffX / msDay);
     document.querySelector(".daysX").textContent = displayDaysX;
 // what to do when time runs out
     if (diffX <= 0) {
@@ -38,16 +38,16 @@ function countDownNY() {
     const now = new Date();
     const diffNY = nyDate - now;
 // seconds till NY
-    const displaySecondsNY = Math.floor((diffNY%msMinute)/msSec);
+    const displaySecondsNY = Math.floor((diffNY % msMinute) / msSec);
     document.querySelector(".secondsNY").textContent = displaySecondsNY;
 // minutes till NY
-    const displayMinutesNY = Math.floor((diffNY%msHour)/msMinute);
+    const displayMinutesNY = Math.floor((diffNY % msHour) / msMinute);
     document.querySelector(".minutesNY").textContent = displayMinutesNY;
 // hours till NY
-    const displayHoursNY = Math.floor((diffNY%msDay)/msHour);
+    const displayHoursNY = Math.floor((diffNY % msDay) / msHour);
     document.querySelector(".hoursNY").textContent = displayHoursNY;
 // days till NY
-    const displayDaysNY = Math.floor(diffNY/msDay);
+    const displayDaysNY = Math.floor(diffNY / msDay);
     document.querySelector(".daysNY").textContent = displayDaysNY;
 // what to do when time runs out
     if (diffNY <= 0) {
