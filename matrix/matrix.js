@@ -8,6 +8,7 @@ let columns = []
 init = () => { // this function starts right after page load
     initMatrix()
     action()
+    console.log("Your screen resolution is: " + screen.width + "x" + screen.height)
 }
 
 // what to do after page has loaded
