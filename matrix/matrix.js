@@ -1,6 +1,7 @@
 let canvas = document.querySelector("#canvas")
 let ctx = canvas.getContext("2d")
 let cellSize = 20 // cell size for each character
+canvas.height = screen.height - 90
 let maxHeight = Math.ceil(canvas.height / cellSize) // max number of cells in column
 let fadingSpeed = 0.05
 let columns = []
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", init)
 
 initMatrix = () => {
     // divide canvas into columns
+    canvas.width = screen.width
     for (let i = 0; i < canvas.width / cellSize; i++) {
         let column = {}
         // x position of columns so they're next to each other
