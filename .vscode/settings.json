@@ -59,6 +59,7 @@
         "Melrose",
         "Merveilles",
         "mirabelle",
+        "monospace",
         "Mugler",
         "muguet",
         "Neroli",
@@ -97,5 +98,6 @@
         "videoplayer",
         "Viktor",
         "Yuzu"
-    ]
+    ],
+    "liveFrame.url": "http://127.0.0.1:5500/matrix/matrix.html"
 }
