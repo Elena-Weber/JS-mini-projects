@@ -30,8 +30,6 @@ let yVelocity = 0
 
 let score = 0
 
-// const gulpSound = new Audio("gulp.mp3")
-
 //game loop
 drawGame =()=> {
     xVelocity = inputsXVelocity
@@ -94,7 +92,6 @@ isGameOver =()=> {
         }
     }
 
-    
     // pop-up window
     if (gameOver) {
         alert("Game over. Please close this window and restart. :)")
@@ -148,7 +145,6 @@ checkAppleCollision =()=> {
         appleY = Math.floor(Math.random() * tileCount)
         tailLength++
         score++
-        // gulpSound.play()
     }
 }
 

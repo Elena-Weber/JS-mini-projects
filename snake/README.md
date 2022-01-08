@@ -1,0 +1,1 @@
+This is a classic Snake game implemented in JS. Browser only version.
