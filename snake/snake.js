@@ -94,16 +94,10 @@ isGameOver =()=> {
         }
     }
 
-    // This part doesn't work in Safari (but works in Chrome)
+    
+    // pop-up window
     if (gameOver) {
-        ctx.fillStyle = "white"
-        ctx.font = "50px Verdana"
-        let gradient = ctx.createLinearGradient(0, 0, canvas.width, 0)
-        gradient.addColorStop("0", "#E8F6EF")
-        gradient.addColorStop("0.5", "#FFC947")
-        gradient.addColorStop("1.0", "#B8DFD8")
-        ctx.fillStyle = gradient
-        ctx.fillText("Game over!", canvas.width / 7.5, canvas.height / 2)
+        alert("Game over. Please close this window and restart. :)")
     }
     return gameOver
 }
