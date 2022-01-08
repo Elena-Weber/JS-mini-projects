@@ -1,7 +1,7 @@
 let canvas = document.querySelector("#canvas")
 let ctx = canvas.getContext("2d")
 let cellSize = 20 // cell size for each character
-canvas.height = screen.height - 90
+canvas.height = screen.height - 90 // make it full screen for any screen resolution
 let maxHeight = Math.ceil(canvas.height / cellSize) // max number of cells in column
 let fadingSpeed = 0.05
 let columns = []
@@ -9,15 +9,15 @@ let columns = []
 init = () => { // this function starts right after page load
     initMatrix()
     action()
-    console.log("Your screen resolution is: " + screen.width + "x" + screen.height)
+    // console.log("Your screen resolution is: " + screen.width + "x" + screen.height)
 }
 
 // what to do after page has loaded
 document.addEventListener("DOMContentLoaded", init)
 
 initMatrix = () => {
+    canvas.width = screen.width // make it full screen for any screen resolution
     // divide canvas into columns
-    canvas.width = screen.width
     for (let i = 0; i < canvas.width / cellSize; i++) {
         let column = {}
         // x position of columns so they're next to each other
