@@ -1,0 +1,1 @@
+This is a front-end JS app representing 2 todo-s.
