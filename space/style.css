@@ -1,3 +1,10 @@
+:root {
+    /* hsl = hue saturation lightness */
+    --color-dark: 230 35% 7%;
+    --color-light: 231 77% 90%;
+    --color-white: 0 0% 100%;
+}
+
 /* CSS reset from https://piccalil.li/blog/a-modern-css-reset/ to strip off unnecessary CSS properties */
 
 /* Box sizing rules */
@@ -73,4 +80,63 @@ select {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+/* Custom utility classes to reduce code */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.container {
+    padding-inline: 2em; /* for right and left only */
+    margin-inline: auto; /* for right and left only */
+    max-width: 80rem;
+}
+
+.sr-only { /* for screen readers only, doesn't exist on browser screen */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
+
+.bg-dark {
+    background-color: hsl(var(--color-dark));
+}
+
+.bg-light {
+    background-color: hsl(var(--color-light));
+}
+
+.bg-white {
+    background-color: hsl(var(--color-white));
+}
+
+.text-dark {
+    color: hsl(var(--color-dark));
+}
+
+.text-light {
+    color: hsl(var(--color-light));
+}
+
+.text-white {
+    color: hsl(var(--color-white));
+}
+
+.semi-transparent { 
+    /* last value is opacity */
+    background-color: hsl(var(--color-light) / .5);
 }
