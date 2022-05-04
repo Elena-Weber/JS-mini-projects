@@ -120,7 +120,7 @@ select {
 
 .flow > *:where(:not(:first-child)) {
     margin-top: var(--flow-space, 1rem);
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .container {
@@ -248,4 +248,66 @@ select {
     color: hsl(var(--color-light) / .25);
     margin-right: .5rem;
     font-weight: 700;
+}
+
+/* components contain several elements*/
+
+.main-button {
+    padding: 0 2em;
+    text-decoration: none;
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    aspect-ratio: 1; /* relations between width and height so it's square */
+    place-items: center; /* in grid, instead of justify-items and align-items */
+    z-index: 1;
+}
+
+.main-button::after { /* what button looks like after hover */
+    content: "";
+    position: absolute;
+    background-color: hsl(var(--color-white) / .15);
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    opacity: 0;
+    transition: transform .75s ease-in-out, opacity .5s linear;
+    z-index: -1;
+}
+
+.main-button:hover::after,
+.main-button:focus::after {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.primary-navigation {
+    --gap: 8rem;
+    --underline-gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.primary-navigation a {
+    text-decoration: none;
+}
+
+.primary-navigation a > span { /* for direct children */
+    font-weight: 700;
+    margin-right: .5em;
+}
+
+.underline_indicators > * {
+    border-bottom: .2rem solid hsl(var(--color-white) / 0);
+    padding: var(--underline-gap, 1rem) 0;
+}
+
+.underline_indicators > *:hover,
+.underline_indicators > *:focus {
+    border-color: hsl(var(--color-white) / .5);
+}
+
+.underline_indicators > .active {
+    border-color: hsl(var(--color-white) / 1);
 }
