@@ -12,7 +12,7 @@
 		$floorLeaves = $('[id^=floorleaf]'),
 		$bird = $('#Bird'),
 		$birdHat = $bird.find('#BirdHat'),
-		$birdEyes = $bird.find('#leftEye, #rihtEye'),
+		$birdEyes = $bird.find('#leftEye, #rightEye'),
 		$nest = $('#NestAndLeaves'),
 		$tree = $('#tree_trunk'),
 		$cardContainer = $('.card.container')
@@ -26,7 +26,7 @@
 			.set($textLine2, {autoAlpha: 0})
 			.set($textGreeting, {autoAlpha: 0})
 			.set($treeLeaves, {autoAlpha: 0})
-			.set($bird, {y:'+=65'}) // move the bird 65px down so it's hidden by the nest
+			.set($bird, {y:'+=65', autoAlpha: 0}) // move the bird 65px down so it's hidden by the nest
 			.set($nest, {autoAlpha: 0})
 			.set($tree, {autoAlpha: 0})
 			.set($floorLeaves, {y:'+=275', onComplete: showContainer}) // move the tree 275px down so it's hidden out of the screen and call the function after it's completed
@@ -51,7 +51,41 @@
 		return floorLeavesTimeline;
 	}
 
-	// enter tree
+	// enter tree leaves, bird, nest
+	function enterTreeStuff() {
+		var treeStuffTimeline = gsap.timeline();
+		treeStuffTimeline
+			.staggerFromTo($treeLeaves, 0.5, {scaleY:0.2, autoAlpha:0, transformOrigin:'center bottom'}, {scaleY:1, autoAlpha:1, transformOrigin:'center bottom'}, 0.02)
+			.fromTo($nest, 1, {y:0,scale:0.2, autoAlpha:0, transformOrigin:'center center'}, {y:'-=15', scale:1, autoAlpha:1, transformOrigin:'center center', ease: Elastic.easeOut}, '+=0.2')
+			.to($nest, 0.3, {y:'+=15', ease: Bounce.easeOut}, '-=0.2')
+			.add('nest-pop-in')
+			.set($birdHat, {rotation: 12, x:'+=6'})
+			.to($bird, 1.4, {y:'-=39', autoAlpha: 1, ease: Power4.easeInOut}, 'nest-pop-in+=0.1')
+			.add('bird-peeking')
+			.set($birdEyes, {autoAlpha:0})
+			.set($birdEyes, {autoAlpha:1}, '=+0.2')
+			.set($birdEyes, {autoAlpha:0}, '+=0.3')
+			.set($birdEyes, {autoAlpha:1}, '+=0.2')
+			.add('bird-blinks')
+			.to($bird, 0.8, {y:'-=34', ease: Power4.easeInOut})
+			.to($bird, 0.3, {y:'+=8', ease: Back.easeOut})
+			.to($birdHat, 0.4, {y:'-=12'}, '-=0.6')
+			.to($birdHat, 0.3, {y:0, rotation:0, x:0, onComplete: startBlinking}, '-=0.2')
+			;
+
+			function startBlinking() {
+				var birdBlinksTimeline = gsap.timeline({repeat: -1, repeatDelay: 5});
+				birdBlinksTimeline
+					.set($birdEyes, {autoAlpha:0})
+					.set($birdEyes, {autoAlpha:1}, '=+0.2')
+					.set($birdEyes, {autoAlpha:0}, '+=1.2')
+					.set($birdEyes, {autoAlpha:1}, '+=0.2')
+
+				return birdBlinksTimeline;
+			}
+
+		return treeStuffTimeline;
+	}
 
 	// enter the greeting text
 	
@@ -62,6 +96,7 @@
 		masterTimeline
 			.add(clearStage(), 'scene-clear-stage')
 			.add(enterFloorVegetation(), 'scene-floor-vegetation')
+			.add(enterTreeStuff(), 'scene-tree-stuff')
 			;
 	}
 
