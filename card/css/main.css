@@ -71,7 +71,7 @@ body {
     margin: auto auto 0px;
     width:100%;
     height: auto;
-    /* display: none; */
+    display: none;
 }
 
 svg {
